@@ -1,0 +1,52 @@
+c:\users\0030482011051\documents\visual studio 2013\Projects\Les_Tels\Les_Tels\bin\Debug\Les_Tels.exe.config
+c:\users\0030482011051\documents\visual studio 2013\Projects\Les_Tels\Les_Tels\bin\Debug\Les_Tels.exe
+c:\users\0030482011051\documents\visual studio 2013\Projects\Les_Tels\Les_Tels\bin\Debug\Les_Tels.pdb
+c:\users\0030482011051\documents\visual studio 2013\Projects\Les_Tels\Les_Tels\obj\Debug\Les_Tels.csprojResolveAssemblyReference.cache
+c:\users\0030482011051\documents\visual studio 2013\Projects\Les_Tels\Les_Tels\obj\Debug\Les_Tels.Caixa.resources
+c:\users\0030482011051\documents\visual studio 2013\Projects\Les_Tels\Les_Tels\obj\Debug\Les_Tels.Fornecedor.resources
+c:\users\0030482011051\documents\visual studio 2013\Projects\Les_Tels\Les_Tels\obj\Debug\Les_Tels.Login.resources
+c:\users\0030482011051\documents\visual studio 2013\Projects\Les_Tels\Les_Tels\obj\Debug\Les_Tels.Menu.resources
+c:\users\0030482011051\documents\visual studio 2013\Projects\Les_Tels\Les_Tels\obj\Debug\Les_Tels.Produtos.resources
+c:\users\0030482011051\documents\visual studio 2013\Projects\Les_Tels\Les_Tels\obj\Debug\Les_Tels.Properties.Resources.resources
+c:\users\0030482011051\documents\visual studio 2013\Projects\Les_Tels\Les_Tels\obj\Debug\Les_Tels.Relatórios.resources
+c:\users\0030482011051\documents\visual studio 2013\Projects\Les_Tels\Les_Tels\obj\Debug\Les_Tels.Usuários.resources
+c:\users\0030482011051\documents\visual studio 2013\Projects\Les_Tels\Les_Tels\obj\Debug\Les_Tels.Vendas.resources
+c:\users\0030482011051\documents\visual studio 2013\Projects\Les_Tels\Les_Tels\obj\Debug\Les_Tels.csproj.GenerateResource.Cache
+c:\users\0030482011051\documents\visual studio 2013\Projects\Les_Tels\Les_Tels\obj\Debug\Les_Tels.exe
+c:\users\0030482011051\documents\visual studio 2013\Projects\Les_Tels\Les_Tels\obj\Debug\Les_Tels.pdb
+C:\Users\Khovovo\Desktop\Projeto\Les_Tels\Les_Tels\bin\Debug\Les_Tels.exe.config
+C:\Users\Khovovo\Desktop\Projeto\Les_Tels\Les_Tels\bin\Debug\Les_Tels.exe
+C:\Users\Khovovo\Desktop\Projeto\Les_Tels\Les_Tels\bin\Debug\Les_Tels.pdb
+C:\Users\Khovovo\Desktop\Projeto\Les_Tels\Les_Tels\obj\Debug\Les_Tels.csproj.AssemblyReference.cache
+C:\Users\Khovovo\Desktop\Projeto\Les_Tels\Les_Tels\obj\Debug\Les_Tels.Caixa.resources
+C:\Users\Khovovo\Desktop\Projeto\Les_Tels\Les_Tels\obj\Debug\Les_Tels.Fornecedor.resources
+C:\Users\Khovovo\Desktop\Projeto\Les_Tels\Les_Tels\obj\Debug\Les_Tels.Login.resources
+C:\Users\Khovovo\Desktop\Projeto\Les_Tels\Les_Tels\obj\Debug\Les_Tels.Menu.resources
+C:\Users\Khovovo\Desktop\Projeto\Les_Tels\Les_Tels\obj\Debug\Les_Tels.Produtos.resources
+C:\Users\Khovovo\Desktop\Projeto\Les_Tels\Les_Tels\obj\Debug\Les_Tels.Properties.Resources.resources
+C:\Users\Khovovo\Desktop\Projeto\Les_Tels\Les_Tels\obj\Debug\Les_Tels.Relatórios.resources
+C:\Users\Khovovo\Desktop\Projeto\Les_Tels\Les_Tels\obj\Debug\Les_Tels.Solicitacoes.resources
+C:\Users\Khovovo\Desktop\Projeto\Les_Tels\Les_Tels\obj\Debug\Les_Tels.Usuários.resources
+C:\Users\Khovovo\Desktop\Projeto\Les_Tels\Les_Tels\obj\Debug\Les_Tels.Vendas.resources
+C:\Users\Khovovo\Desktop\Projeto\Les_Tels\Les_Tels\obj\Debug\Les_Tels.csproj.GenerateResource.cache
+C:\Users\Khovovo\Desktop\Projeto\Les_Tels\Les_Tels\obj\Debug\Les_Tels.csproj.CoreCompileInputs.cache
+C:\Users\Khovovo\Desktop\Projeto\Les_Tels\Les_Tels\obj\Debug\Les_Tels.exe
+C:\Users\Khovovo\Desktop\Projeto\Les_Tels\Les_Tels\obj\Debug\Les_Tels.pdb
+C:\Users\Igor\Documents\Fatec\5º Semestre\LES\les\Les_Tels\Les_Tels\bin\Debug\Les_Tels.exe.config
+C:\Users\Igor\Documents\Fatec\5º Semestre\LES\les\Les_Tels\Les_Tels\bin\Debug\Les_Tels.exe
+C:\Users\Igor\Documents\Fatec\5º Semestre\LES\les\Les_Tels\Les_Tels\bin\Debug\Les_Tels.pdb
+C:\Users\Igor\Documents\Fatec\5º Semestre\LES\les\Les_Tels\Les_Tels\obj\Debug\Les_Tels.csprojAssemblyReference.cache
+C:\Users\Igor\Documents\Fatec\5º Semestre\LES\les\Les_Tels\Les_Tels\obj\Debug\Les_Tels.Caixa.resources
+C:\Users\Igor\Documents\Fatec\5º Semestre\LES\les\Les_Tels\Les_Tels\obj\Debug\Les_Tels.Fornecedor.resources
+C:\Users\Igor\Documents\Fatec\5º Semestre\LES\les\Les_Tels\Les_Tels\obj\Debug\Les_Tels.Login.resources
+C:\Users\Igor\Documents\Fatec\5º Semestre\LES\les\Les_Tels\Les_Tels\obj\Debug\Les_Tels.Menu.resources
+C:\Users\Igor\Documents\Fatec\5º Semestre\LES\les\Les_Tels\Les_Tels\obj\Debug\Les_Tels.Produtos.resources
+C:\Users\Igor\Documents\Fatec\5º Semestre\LES\les\Les_Tels\Les_Tels\obj\Debug\Les_Tels.Properties.Resources.resources
+C:\Users\Igor\Documents\Fatec\5º Semestre\LES\les\Les_Tels\Les_Tels\obj\Debug\Les_Tels.Relatórios.resources
+C:\Users\Igor\Documents\Fatec\5º Semestre\LES\les\Les_Tels\Les_Tels\obj\Debug\Les_Tels.Solicitacoes.resources
+C:\Users\Igor\Documents\Fatec\5º Semestre\LES\les\Les_Tels\Les_Tels\obj\Debug\Les_Tels.Usuários.resources
+C:\Users\Igor\Documents\Fatec\5º Semestre\LES\les\Les_Tels\Les_Tels\obj\Debug\Les_Tels.Vendas.resources
+C:\Users\Igor\Documents\Fatec\5º Semestre\LES\les\Les_Tels\Les_Tels\obj\Debug\Les_Tels.csproj.GenerateResource.cache
+C:\Users\Igor\Documents\Fatec\5º Semestre\LES\les\Les_Tels\Les_Tels\obj\Debug\Les_Tels.csproj.CoreCompileInputs.cache
+C:\Users\Igor\Documents\Fatec\5º Semestre\LES\les\Les_Tels\Les_Tels\obj\Debug\Les_Tels.exe
+C:\Users\Igor\Documents\Fatec\5º Semestre\LES\les\Les_Tels\Les_Tels\obj\Debug\Les_Tels.pdb
