@@ -39,6 +39,8 @@
             this.btnRelatorios = new System.Windows.Forms.Button();
             this.btnFornecedores = new System.Windows.Forms.Button();
             this.btnUsuarios = new System.Windows.Forms.Button();
+            this.produtos1 = new Les_Tels.Produtos();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -62,6 +64,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.produtos1);
             this.panel1.Location = new System.Drawing.Point(146, 132);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1117, 548);
@@ -138,6 +141,13 @@
             this.btnUsuarios.Text = "Usuários";
             this.btnUsuarios.UseVisualStyleBackColor = true;
             // 
+            // produtos1
+            // 
+            this.produtos1.Location = new System.Drawing.Point(0, -3);
+            this.produtos1.Name = "produtos1";
+            this.produtos1.Size = new System.Drawing.Size(1110, 540);
+            this.produtos1.TabIndex = 0;
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -157,6 +167,7 @@
             this.Name = "Menu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu";
+            this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -176,5 +187,6 @@
         private System.Windows.Forms.Button btnRelatorios;
         private System.Windows.Forms.Button btnFornecedores;
         private System.Windows.Forms.Button btnUsuarios;
+        private Produtos produtos1;
     }
 }

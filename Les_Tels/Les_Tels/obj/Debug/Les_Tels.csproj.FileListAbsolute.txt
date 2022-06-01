@@ -50,3 +50,20 @@ C:\Users\Igor\Documents\Fatec\5º Semestre\LES\les\Les_Tels\Les_Tels\obj\Debug\L
 C:\Users\Igor\Documents\Fatec\5º Semestre\LES\les\Les_Tels\Les_Tels\obj\Debug\Les_Tels.csproj.CoreCompileInputs.cache
 C:\Users\Igor\Documents\Fatec\5º Semestre\LES\les\Les_Tels\Les_Tels\obj\Debug\Les_Tels.exe
 C:\Users\Igor\Documents\Fatec\5º Semestre\LES\les\Les_Tels\Les_Tels\obj\Debug\Les_Tels.pdb
+C:\Users\0030482011051\Desktop\Projetoo\les\Les_Tels\Les_Tels\bin\Debug\Les_Tels.exe.config
+C:\Users\0030482011051\Desktop\Projetoo\les\Les_Tels\Les_Tels\obj\Debug\Les_Tels.exe
+C:\Users\0030482011051\Desktop\Projetoo\les\Les_Tels\Les_Tels\obj\Debug\Les_Tels.pdb
+C:\Users\0030482011051\Desktop\Projetoo\les\Les_Tels\Les_Tels\bin\Debug\Les_Tels.exe
+C:\Users\0030482011051\Desktop\Projetoo\les\Les_Tels\Les_Tels\bin\Debug\Les_Tels.pdb
+C:\Users\0030482011051\Desktop\Projetoo\les\Les_Tels\Les_Tels\obj\Debug\Les_Tels.Caixa.resources
+C:\Users\0030482011051\Desktop\Projetoo\les\Les_Tels\Les_Tels\obj\Debug\Les_Tels.Fornecedor.resources
+C:\Users\0030482011051\Desktop\Projetoo\les\Les_Tels\Les_Tels\obj\Debug\Les_Tels.Login.resources
+C:\Users\0030482011051\Desktop\Projetoo\les\Les_Tels\Les_Tels\obj\Debug\Les_Tels.Menu.resources
+C:\Users\0030482011051\Desktop\Projetoo\les\Les_Tels\Les_Tels\obj\Debug\Les_Tels.Produtos.resources
+C:\Users\0030482011051\Desktop\Projetoo\les\Les_Tels\Les_Tels\obj\Debug\Les_Tels.Properties.Resources.resources
+C:\Users\0030482011051\Desktop\Projetoo\les\Les_Tels\Les_Tels\obj\Debug\Les_Tels.Relatórios.resources
+C:\Users\0030482011051\Desktop\Projetoo\les\Les_Tels\Les_Tels\obj\Debug\Les_Tels.Solicitacoes.resources
+C:\Users\0030482011051\Desktop\Projetoo\les\Les_Tels\Les_Tels\obj\Debug\Les_Tels.Usuários.resources
+C:\Users\0030482011051\Desktop\Projetoo\les\Les_Tels\Les_Tels\obj\Debug\Les_Tels.Vendas.resources
+C:\Users\0030482011051\Desktop\Projetoo\les\Les_Tels\Les_Tels\obj\Debug\Les_Tels.csproj.GenerateResource.Cache
+C:\Users\0030482011051\Desktop\Projetoo\les\Les_Tels\Les_Tels\obj\Debug\Les_Tels.csprojResolveAssemblyReference.cache
