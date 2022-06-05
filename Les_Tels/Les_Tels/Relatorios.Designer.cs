@@ -1,6 +1,6 @@
 ﻿namespace Les_Tels
 {
-    partial class Relatórios
+    partial class Relatorios
     {
         /// <summary> 
         /// Required designer variable.

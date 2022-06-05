@@ -28,165 +28,316 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnVendas = new System.Windows.Forms.Button();
-            this.btnProdutos = new System.Windows.Forms.Button();
-            this.btnCaixa = new System.Windows.Forms.Button();
-            this.btnPedidos = new System.Windows.Forms.Button();
-            this.btnRelatorios = new System.Windows.Forms.Button();
-            this.btnFornecedores = new System.Windows.Forms.Button();
+            this.lblVendas = new System.Windows.Forms.Label();
+            this.pnlTopo = new System.Windows.Forms.Panel();
+            this.lblTitulo = new System.Windows.Forms.Label();
+            this.pnlBarra = new System.Windows.Forms.Panel();
+            this.rbtnMenu = new CustomControls.RoundButtonControls.RoundButton();
             this.btnUsuarios = new System.Windows.Forms.Button();
-            this.produtos1 = new Les_Tels.Produtos();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.btnFornecedores = new System.Windows.Forms.Button();
+            this.btnRelatorios = new System.Windows.Forms.Button();
+            this.btnPedidos = new System.Windows.Forms.Button();
+            this.btnCaixa = new System.Windows.Forms.Button();
+            this.btnProdutos = new System.Windows.Forms.Button();
+            this.lblUsuarios = new System.Windows.Forms.Label();
+            this.lblFornecedores = new System.Windows.Forms.Label();
+            this.lblRelatorios = new System.Windows.Forms.Label();
+            this.lblPedidos = new System.Windows.Forms.Label();
+            this.lblCaixa = new System.Windows.Forms.Label();
+            this.lblProdutos = new System.Windows.Forms.Label();
+            this.btnVendas = new System.Windows.Forms.Button();
+            this.pnlJanelas = new System.Windows.Forms.Panel();
+            this.pnlTopo.SuspendLayout();
+            this.pnlBarra.SuspendLayout();
             this.SuspendLayout();
             // 
-            // textBox1
+            // lblVendas
             // 
-            this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(1, 1);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(144, 745);
-            this.textBox1.TabIndex = 0;
+            this.lblVendas.AutoSize = true;
+            this.lblVendas.Location = new System.Drawing.Point(51, 195);
+            this.lblVendas.Name = "lblVendas";
+            this.lblVendas.Size = new System.Drawing.Size(43, 13);
+            this.lblVendas.TabIndex = 9;
+            this.lblVendas.Text = "Vendas";
             // 
-            // textBox2
+            // pnlTopo
             // 
-            this.textBox2.Enabled = false;
-            this.textBox2.Location = new System.Drawing.Point(1, 1);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(1278, 128);
-            this.textBox2.TabIndex = 1;
+            this.pnlTopo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(59)))), ((int)(((byte)(14)))));
+            this.pnlTopo.Controls.Add(this.lblTitulo);
+            this.pnlTopo.Location = new System.Drawing.Point(144, -2);
+            this.pnlTopo.Name = "pnlTopo";
+            this.pnlTopo.Size = new System.Drawing.Size(1119, 128);
+            this.pnlTopo.TabIndex = 10;
             // 
-            // panel1
+            // lblTitulo
             // 
-            this.panel1.Controls.Add(this.produtos1);
-            this.panel1.Location = new System.Drawing.Point(146, 132);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1117, 548);
-            this.panel1.TabIndex = 2;
+            this.lblTitulo.AutoSize = true;
+            this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(169)))), ((int)(((byte)(77)))));
+            this.lblTitulo.Location = new System.Drawing.Point(247, 26);
+            this.lblTitulo.Name = "lblTitulo";
+            this.lblTitulo.Size = new System.Drawing.Size(542, 73);
+            this.lblTitulo.TabIndex = 0;
+            this.lblTitulo.Text = "Cantinho do Trigo";
             // 
-            // pictureBox1
+            // pnlBarra
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(112, 98);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.pnlBarra.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(59)))), ((int)(((byte)(14)))));
+            this.pnlBarra.Controls.Add(this.rbtnMenu);
+            this.pnlBarra.Controls.Add(this.btnUsuarios);
+            this.pnlBarra.Controls.Add(this.btnFornecedores);
+            this.pnlBarra.Controls.Add(this.btnRelatorios);
+            this.pnlBarra.Controls.Add(this.btnPedidos);
+            this.pnlBarra.Controls.Add(this.btnCaixa);
+            this.pnlBarra.Controls.Add(this.btnProdutos);
+            this.pnlBarra.Controls.Add(this.lblUsuarios);
+            this.pnlBarra.Controls.Add(this.lblFornecedores);
+            this.pnlBarra.Controls.Add(this.lblRelatorios);
+            this.pnlBarra.Controls.Add(this.lblPedidos);
+            this.pnlBarra.Controls.Add(this.lblCaixa);
+            this.pnlBarra.Controls.Add(this.lblProdutos);
+            this.pnlBarra.Controls.Add(this.btnVendas);
+            this.pnlBarra.Controls.Add(this.lblVendas);
+            this.pnlBarra.Location = new System.Drawing.Point(0, 0);
+            this.pnlBarra.Name = "pnlBarra";
+            this.pnlBarra.Size = new System.Drawing.Size(144, 682);
+            this.pnlBarra.TabIndex = 0;
             // 
-            // btnVendas
+            // rbtnMenu
             // 
-            this.btnVendas.Location = new System.Drawing.Point(12, 147);
-            this.btnVendas.Name = "btnVendas";
-            this.btnVendas.Size = new System.Drawing.Size(112, 52);
-            this.btnVendas.TabIndex = 0;
-            this.btnVendas.Text = "Vendas";
-            this.btnVendas.UseVisualStyleBackColor = true;
-            // 
-            // btnProdutos
-            // 
-            this.btnProdutos.Location = new System.Drawing.Point(12, 221);
-            this.btnProdutos.Name = "btnProdutos";
-            this.btnProdutos.Size = new System.Drawing.Size(112, 52);
-            this.btnProdutos.TabIndex = 3;
-            this.btnProdutos.Text = "Produtos";
-            this.btnProdutos.UseVisualStyleBackColor = true;
-            // 
-            // btnCaixa
-            // 
-            this.btnCaixa.Location = new System.Drawing.Point(12, 293);
-            this.btnCaixa.Name = "btnCaixa";
-            this.btnCaixa.Size = new System.Drawing.Size(112, 52);
-            this.btnCaixa.TabIndex = 4;
-            this.btnCaixa.Text = "Caixa";
-            this.btnCaixa.UseVisualStyleBackColor = true;
-            // 
-            // btnPedidos
-            // 
-            this.btnPedidos.Location = new System.Drawing.Point(12, 368);
-            this.btnPedidos.Name = "btnPedidos";
-            this.btnPedidos.Size = new System.Drawing.Size(112, 52);
-            this.btnPedidos.TabIndex = 5;
-            this.btnPedidos.Text = "Pedidos";
-            this.btnPedidos.UseVisualStyleBackColor = true;
-            // 
-            // btnRelatorios
-            // 
-            this.btnRelatorios.Location = new System.Drawing.Point(12, 441);
-            this.btnRelatorios.Name = "btnRelatorios";
-            this.btnRelatorios.Size = new System.Drawing.Size(112, 52);
-            this.btnRelatorios.TabIndex = 6;
-            this.btnRelatorios.Text = "Relatórios";
-            this.btnRelatorios.UseVisualStyleBackColor = true;
-            // 
-            // btnFornecedores
-            // 
-            this.btnFornecedores.Location = new System.Drawing.Point(12, 512);
-            this.btnFornecedores.Name = "btnFornecedores";
-            this.btnFornecedores.Size = new System.Drawing.Size(112, 52);
-            this.btnFornecedores.TabIndex = 7;
-            this.btnFornecedores.Text = "Fornecedores";
-            this.btnFornecedores.UseVisualStyleBackColor = true;
+            this.rbtnMenu.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.rbtnMenu.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.rbtnMenu.BackgroundImage = global::Les_Tels.Properties.Resources._4_1;
+            this.rbtnMenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.rbtnMenu.BorderColor = System.Drawing.Color.Black;
+            this.rbtnMenu.BorderRadius = 55;
+            this.rbtnMenu.BorderSize = 2;
+            this.rbtnMenu.FlatAppearance.BorderSize = 0;
+            this.rbtnMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rbtnMenu.ForeColor = System.Drawing.Color.White;
+            this.rbtnMenu.Location = new System.Drawing.Point(14, 10);
+            this.rbtnMenu.Name = "rbtnMenu";
+            this.rbtnMenu.Size = new System.Drawing.Size(112, 112);
+            this.rbtnMenu.TabIndex = 0;
+            this.rbtnMenu.TextColor = System.Drawing.Color.White;
+            this.rbtnMenu.UseVisualStyleBackColor = false;
+            this.rbtnMenu.Click += new System.EventHandler(this.rbtnMenu_Click);
             // 
             // btnUsuarios
             // 
-            this.btnUsuarios.Location = new System.Drawing.Point(12, 582);
+            this.btnUsuarios.BackColor = System.Drawing.Color.Transparent;
+            this.btnUsuarios.BackgroundImage = global::Les_Tels.Properties.Resources.Usuários_Cinza_Preto;
+            this.btnUsuarios.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnUsuarios.FlatAppearance.BorderSize = 0;
+            this.btnUsuarios.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnUsuarios.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnUsuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUsuarios.Location = new System.Drawing.Point(14, 575);
             this.btnUsuarios.Name = "btnUsuarios";
             this.btnUsuarios.Size = new System.Drawing.Size(112, 52);
-            this.btnUsuarios.TabIndex = 8;
-            this.btnUsuarios.Text = "Usuários";
-            this.btnUsuarios.UseVisualStyleBackColor = true;
+            this.btnUsuarios.TabIndex = 22;
+            this.btnUsuarios.UseVisualStyleBackColor = false;
+            this.btnUsuarios.Click += new System.EventHandler(this.btnUsuarios_Click);
             // 
-            // produtos1
+            // btnFornecedores
             // 
-            this.produtos1.Location = new System.Drawing.Point(0, -3);
-            this.produtos1.Name = "produtos1";
-            this.produtos1.Size = new System.Drawing.Size(1110, 540);
-            this.produtos1.TabIndex = 0;
+            this.btnFornecedores.BackColor = System.Drawing.Color.Transparent;
+            this.btnFornecedores.BackgroundImage = global::Les_Tels.Properties.Resources.Fornecedor_Cinza_Preto;
+            this.btnFornecedores.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnFornecedores.FlatAppearance.BorderSize = 0;
+            this.btnFornecedores.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnFornecedores.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnFornecedores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFornecedores.Location = new System.Drawing.Point(14, 505);
+            this.btnFornecedores.Name = "btnFornecedores";
+            this.btnFornecedores.Size = new System.Drawing.Size(112, 52);
+            this.btnFornecedores.TabIndex = 21;
+            this.btnFornecedores.UseVisualStyleBackColor = false;
+            this.btnFornecedores.Click += new System.EventHandler(this.btnFornecedores_Click);
+            // 
+            // btnRelatorios
+            // 
+            this.btnRelatorios.BackColor = System.Drawing.Color.Transparent;
+            this.btnRelatorios.BackgroundImage = global::Les_Tels.Properties.Resources.Relatório_Cinza_Preto;
+            this.btnRelatorios.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnRelatorios.FlatAppearance.BorderSize = 0;
+            this.btnRelatorios.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnRelatorios.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnRelatorios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRelatorios.Location = new System.Drawing.Point(14, 432);
+            this.btnRelatorios.Name = "btnRelatorios";
+            this.btnRelatorios.Size = new System.Drawing.Size(112, 52);
+            this.btnRelatorios.TabIndex = 20;
+            this.btnRelatorios.UseVisualStyleBackColor = false;
+            this.btnRelatorios.Click += new System.EventHandler(this.btnRelatorios_Click);
+            // 
+            // btnPedidos
+            // 
+            this.btnPedidos.BackColor = System.Drawing.Color.Transparent;
+            this.btnPedidos.BackgroundImage = global::Les_Tels.Properties.Resources.Pedidos_Cinza_Preto;
+            this.btnPedidos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnPedidos.FlatAppearance.BorderSize = 0;
+            this.btnPedidos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnPedidos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnPedidos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPedidos.Location = new System.Drawing.Point(14, 361);
+            this.btnPedidos.Name = "btnPedidos";
+            this.btnPedidos.Size = new System.Drawing.Size(112, 52);
+            this.btnPedidos.TabIndex = 19;
+            this.btnPedidos.UseVisualStyleBackColor = false;
+            this.btnPedidos.Click += new System.EventHandler(this.btnPedidos_Click);
+            // 
+            // btnCaixa
+            // 
+            this.btnCaixa.BackColor = System.Drawing.Color.Transparent;
+            this.btnCaixa.BackgroundImage = global::Les_Tels.Properties.Resources.Caixa_Cinza_Preto;
+            this.btnCaixa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnCaixa.FlatAppearance.BorderSize = 0;
+            this.btnCaixa.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnCaixa.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnCaixa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCaixa.Location = new System.Drawing.Point(14, 290);
+            this.btnCaixa.Name = "btnCaixa";
+            this.btnCaixa.Size = new System.Drawing.Size(112, 52);
+            this.btnCaixa.TabIndex = 18;
+            this.btnCaixa.UseVisualStyleBackColor = false;
+            this.btnCaixa.Click += new System.EventHandler(this.btnCaixa_Click);
+            // 
+            // btnProdutos
+            // 
+            this.btnProdutos.BackColor = System.Drawing.Color.Transparent;
+            this.btnProdutos.BackgroundImage = global::Les_Tels.Properties.Resources.Produtos_Cinza_Preto;
+            this.btnProdutos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnProdutos.FlatAppearance.BorderSize = 0;
+            this.btnProdutos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnProdutos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnProdutos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProdutos.Location = new System.Drawing.Point(14, 215);
+            this.btnProdutos.Name = "btnProdutos";
+            this.btnProdutos.Size = new System.Drawing.Size(112, 52);
+            this.btnProdutos.TabIndex = 17;
+            this.btnProdutos.UseVisualStyleBackColor = false;
+            this.btnProdutos.Click += new System.EventHandler(this.btnProdutos_Click);
+            // 
+            // lblUsuarios
+            // 
+            this.lblUsuarios.AutoSize = true;
+            this.lblUsuarios.Location = new System.Drawing.Point(51, 630);
+            this.lblUsuarios.Name = "lblUsuarios";
+            this.lblUsuarios.Size = new System.Drawing.Size(48, 13);
+            this.lblUsuarios.TabIndex = 16;
+            this.lblUsuarios.Text = "Usuários";
+            // 
+            // lblFornecedores
+            // 
+            this.lblFornecedores.AutoSize = true;
+            this.lblFornecedores.Location = new System.Drawing.Point(51, 559);
+            this.lblFornecedores.Name = "lblFornecedores";
+            this.lblFornecedores.Size = new System.Drawing.Size(72, 13);
+            this.lblFornecedores.TabIndex = 15;
+            this.lblFornecedores.Text = "Fornecedores";
+            // 
+            // lblRelatorios
+            // 
+            this.lblRelatorios.AutoSize = true;
+            this.lblRelatorios.Location = new System.Drawing.Point(51, 489);
+            this.lblRelatorios.Name = "lblRelatorios";
+            this.lblRelatorios.Size = new System.Drawing.Size(54, 13);
+            this.lblRelatorios.TabIndex = 14;
+            this.lblRelatorios.Text = "Relatórios";
+            // 
+            // lblPedidos
+            // 
+            this.lblPedidos.AutoSize = true;
+            this.lblPedidos.Location = new System.Drawing.Point(51, 416);
+            this.lblPedidos.Name = "lblPedidos";
+            this.lblPedidos.Size = new System.Drawing.Size(45, 13);
+            this.lblPedidos.TabIndex = 13;
+            this.lblPedidos.Text = "Pedidos";
+            // 
+            // lblCaixa
+            // 
+            this.lblCaixa.AutoSize = true;
+            this.lblCaixa.Location = new System.Drawing.Point(51, 345);
+            this.lblCaixa.Name = "lblCaixa";
+            this.lblCaixa.Size = new System.Drawing.Size(33, 13);
+            this.lblCaixa.TabIndex = 12;
+            this.lblCaixa.Text = "Caixa";
+            // 
+            // lblProdutos
+            // 
+            this.lblProdutos.AutoSize = true;
+            this.lblProdutos.Location = new System.Drawing.Point(51, 270);
+            this.lblProdutos.Name = "lblProdutos";
+            this.lblProdutos.Size = new System.Drawing.Size(49, 13);
+            this.lblProdutos.TabIndex = 11;
+            this.lblProdutos.Text = "Produtos";
+            // 
+            // btnVendas
+            // 
+            this.btnVendas.BackColor = System.Drawing.Color.Transparent;
+            this.btnVendas.BackgroundImage = global::Les_Tels.Properties.Resources.Vendas_Cinza_Preto;
+            this.btnVendas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnVendas.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnVendas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnVendas.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnVendas.Location = new System.Drawing.Point(14, 140);
+            this.btnVendas.Name = "btnVendas";
+            this.btnVendas.Size = new System.Drawing.Size(112, 52);
+            this.btnVendas.TabIndex = 0;
+            this.btnVendas.UseVisualStyleBackColor = false;
+            this.btnVendas.Click += new System.EventHandler(this.btnVendas_Click);
+            // 
+            // pnlJanelas
+            // 
+            this.pnlJanelas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(221)))), ((int)(((byte)(221)))));
+            this.pnlJanelas.BackgroundImage = global::Les_Tels.Properties.Resources._4_1_r;
+            this.pnlJanelas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pnlJanelas.Location = new System.Drawing.Point(144, 126);
+            this.pnlJanelas.Name = "pnlJanelas";
+            this.pnlJanelas.Size = new System.Drawing.Size(1119, 555);
+            this.pnlJanelas.TabIndex = 2;
             // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1264, 681);
-            this.Controls.Add(this.btnUsuarios);
-            this.Controls.Add(this.btnProdutos);
-            this.Controls.Add(this.btnFornecedores);
-            this.Controls.Add(this.btnCaixa);
-            this.Controls.Add(this.btnRelatorios);
-            this.Controls.Add(this.btnPedidos);
-            this.Controls.Add(this.btnVendas);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.pnlBarra);
+            this.Controls.Add(this.pnlTopo);
+            this.Controls.Add(this.pnlJanelas);
             this.Name = "Menu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu";
-            this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.pnlTopo.ResumeLayout(false);
+            this.pnlTopo.PerformLayout();
+            this.pnlBarra.ResumeLayout(false);
+            this.pnlBarra.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Panel pnlJanelas;
         private System.Windows.Forms.Button btnVendas;
-        private System.Windows.Forms.Button btnProdutos;
-        private System.Windows.Forms.Button btnCaixa;
-        private System.Windows.Forms.Button btnPedidos;
-        private System.Windows.Forms.Button btnRelatorios;
-        private System.Windows.Forms.Button btnFornecedores;
+        private System.Windows.Forms.Label lblVendas;
+        private System.Windows.Forms.Panel pnlTopo;
+        private System.Windows.Forms.Panel pnlBarra;
+        private System.Windows.Forms.Label lblUsuarios;
+        private System.Windows.Forms.Label lblFornecedores;
+        private System.Windows.Forms.Label lblRelatorios;
+        private System.Windows.Forms.Label lblPedidos;
+        private System.Windows.Forms.Label lblCaixa;
+        private System.Windows.Forms.Label lblProdutos;
         private System.Windows.Forms.Button btnUsuarios;
-        private Produtos produtos1;
+        private System.Windows.Forms.Button btnFornecedores;
+        private System.Windows.Forms.Button btnRelatorios;
+        private System.Windows.Forms.Button btnPedidos;
+        private System.Windows.Forms.Button btnCaixa;
+        private System.Windows.Forms.Button btnProdutos;
+        private System.Windows.Forms.Label lblTitulo;
+        private CustomControls.RoundButtonControls.RoundButton rbtnMenu;
     }
 }

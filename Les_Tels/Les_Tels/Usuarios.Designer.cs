@@ -1,6 +1,6 @@
 ﻿namespace Les_Tels
 {
-    partial class Usuários
+    partial class Usuarios
     {
         /// <summary> 
         /// Required designer variable.

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Les_Tels
 {
-    public partial class Relatórios : UserControl
+    public partial class Usuarios : UserControl
     {
-        public Relatórios()
+        public Usuarios()
         {
             InitializeComponent();
         }
