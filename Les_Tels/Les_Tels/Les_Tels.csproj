@@ -68,6 +68,12 @@
     <Compile Include="Menu.designer.cs">
       <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
+    <Compile Include="MiniProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MiniProduto.Designer.cs">
+      <DependentUpon>MiniProduto.cs</DependentUpon>
+    </Compile>
     <Compile Include="Produtos.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -84,6 +90,9 @@
     </Compile>
     <Compile Include="RoundButton.cs">
       <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SetConnection.cs">
+      <DependentUpon>SetConnection.xsd</DependentUpon>
     </Compile>
     <Compile Include="SetConnection.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -119,6 +128,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MiniProduto.resx">
+      <DependentUpon>MiniProduto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Produtos.resx">
       <DependentUpon>Produtos.cs</DependentUpon>

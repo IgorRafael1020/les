@@ -67,3 +67,22 @@ C:\Users\0030482011051\Desktop\Projetoo\les\Les_Tels\Les_Tels\obj\Debug\Les_Tels
 C:\Users\0030482011051\Desktop\Projetoo\les\Les_Tels\Les_Tels\obj\Debug\Les_Tels.csprojResolveAssemblyReference.cache
 C:\Users\Igor\Documents\Fatec\5º Semestre\LES\les\Les_Tels\Les_Tels\obj\Debug\Les_Tels.Relatorios.resources
 C:\Users\Igor\Documents\Fatec\5º Semestre\LES\les\Les_Tels\Les_Tels\obj\Debug\Les_Tels.Usuarios.resources
+C:\Users\Khovovo\Desktop\Agora Vai Les\Les_Tels\Les_Tels\bin\Debug\Les_Tels.exe.config
+C:\Users\Khovovo\Desktop\Agora Vai Les\Les_Tels\Les_Tels\bin\Debug\Les_Tels.exe
+C:\Users\Khovovo\Desktop\Agora Vai Les\Les_Tels\Les_Tels\bin\Debug\Les_Tels.pdb
+C:\Users\Khovovo\Desktop\Agora Vai Les\Les_Tels\Les_Tels\obj\Debug\Les_Tels.csproj.AssemblyReference.cache
+C:\Users\Khovovo\Desktop\Agora Vai Les\Les_Tels\Les_Tels\obj\Debug\Les_Tels.Caixa.resources
+C:\Users\Khovovo\Desktop\Agora Vai Les\Les_Tels\Les_Tels\obj\Debug\Les_Tels.Fornecedor.resources
+C:\Users\Khovovo\Desktop\Agora Vai Les\Les_Tels\Les_Tels\obj\Debug\Les_Tels.Login.resources
+C:\Users\Khovovo\Desktop\Agora Vai Les\Les_Tels\Les_Tels\obj\Debug\Les_Tels.Menu.resources
+C:\Users\Khovovo\Desktop\Agora Vai Les\Les_Tels\Les_Tels\obj\Debug\Les_Tels.Produtos.resources
+C:\Users\Khovovo\Desktop\Agora Vai Les\Les_Tels\Les_Tels\obj\Debug\Les_Tels.Properties.Resources.resources
+C:\Users\Khovovo\Desktop\Agora Vai Les\Les_Tels\Les_Tels\obj\Debug\Les_Tels.Relatorios.resources
+C:\Users\Khovovo\Desktop\Agora Vai Les\Les_Tels\Les_Tels\obj\Debug\Les_Tels.Solicitacoes.resources
+C:\Users\Khovovo\Desktop\Agora Vai Les\Les_Tels\Les_Tels\obj\Debug\Les_Tels.Usuarios.resources
+C:\Users\Khovovo\Desktop\Agora Vai Les\Les_Tels\Les_Tels\obj\Debug\Les_Tels.Vendas.resources
+C:\Users\Khovovo\Desktop\Agora Vai Les\Les_Tels\Les_Tels\obj\Debug\Les_Tels.csproj.GenerateResource.cache
+C:\Users\Khovovo\Desktop\Agora Vai Les\Les_Tels\Les_Tels\obj\Debug\Les_Tels.csproj.CoreCompileInputs.cache
+C:\Users\Khovovo\Desktop\Agora Vai Les\Les_Tels\Les_Tels\obj\Debug\Les_Tels.exe
+C:\Users\Khovovo\Desktop\Agora Vai Les\Les_Tels\Les_Tels\obj\Debug\Les_Tels.pdb
+C:\Users\Khovovo\Desktop\Agora Vai Les\Les_Tels\Les_Tels\obj\Debug\Les_Tels.Novo_Produto.resources

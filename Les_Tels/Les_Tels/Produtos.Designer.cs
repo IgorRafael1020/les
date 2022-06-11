@@ -36,17 +36,18 @@
             this.btnNovoProduto = new System.Windows.Forms.Button();
             this.btnDefinirProducao = new System.Windows.Forms.Button();
             this.dgvProdutos = new System.Windows.Forms.DataGridView();
-            this.produtosBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.setConnection = new Les_Tels.SetConnection();
-            this.produtosTableAdapter = new Les_Tels.SetConnectionTableAdapters.produtosTableAdapter();
             this.codProdutoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.descricaoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.precoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.unidadeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.quantidadeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.estoqueMinimoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataValidadeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.codTipoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.codUsuarioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.produtosBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.setConnection = new Les_Tels.SetConnection();
+            this.produtosTableAdapter = new Les_Tels.SetConnectionTableAdapters.produtosTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProdutos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.produtosBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.setConnection)).BeginInit();
@@ -86,6 +87,7 @@
             this.btnEditarProduto.TabIndex = 7;
             this.btnEditarProduto.Text = "Editar Produto";
             this.btnEditarProduto.UseVisualStyleBackColor = true;
+            this.btnEditarProduto.Click += new System.EventHandler(this.btnEditarProduto_Click);
             // 
             // btnNovoProduto
             // 
@@ -95,6 +97,7 @@
             this.btnNovoProduto.TabIndex = 6;
             this.btnNovoProduto.Text = "Novo Produto";
             this.btnNovoProduto.UseVisualStyleBackColor = true;
+            this.btnNovoProduto.Click += new System.EventHandler(this.btnNovoProduto_Click);
             // 
             // btnDefinirProducao
             // 
@@ -110,6 +113,7 @@
             this.dgvProdutos.AllowUserToAddRows = false;
             this.dgvProdutos.AllowUserToDeleteRows = false;
             this.dgvProdutos.AllowUserToResizeColumns = false;
+            this.dgvProdutos.AllowUserToResizeRows = false;
             this.dgvProdutos.AutoGenerateColumns = false;
             this.dgvProdutos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvProdutos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -118,33 +122,19 @@
             this.precoDataGridViewTextBoxColumn,
             this.unidadeDataGridViewTextBoxColumn,
             this.quantidadeDataGridViewTextBoxColumn,
+            this.estoqueMinimoDataGridViewTextBoxColumn,
             this.dataValidadeDataGridViewTextBoxColumn,
             this.codTipoDataGridViewTextBoxColumn,
             this.codUsuarioDataGridViewTextBoxColumn});
             this.dgvProdutos.DataSource = this.produtosBindingSource;
-            this.dgvProdutos.Location = new System.Drawing.Point(17, 84);
+            this.dgvProdutos.Location = new System.Drawing.Point(17, 68);
             this.dgvProdutos.MultiSelect = false;
             this.dgvProdutos.Name = "dgvProdutos";
             this.dgvProdutos.ReadOnly = true;
             this.dgvProdutos.RowHeadersVisible = false;
             this.dgvProdutos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvProdutos.ShowEditingIcon = false;
-            this.dgvProdutos.Size = new System.Drawing.Size(1028, 245);
+            this.dgvProdutos.Size = new System.Drawing.Size(1028, 198);
             this.dgvProdutos.TabIndex = 13;
-            // 
-            // produtosBindingSource
-            // 
-            this.produtosBindingSource.DataMember = "produtos";
-            this.produtosBindingSource.DataSource = this.setConnection;
-            // 
-            // setConnection
-            // 
-            this.setConnection.DataSetName = "SetConnection";
-            this.setConnection.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // produtosTableAdapter
-            // 
-            this.produtosTableAdapter.ClearBeforeFill = true;
             // 
             // codProdutoDataGridViewTextBoxColumn
             // 
@@ -182,6 +172,13 @@
             this.quantidadeDataGridViewTextBoxColumn.Name = "quantidadeDataGridViewTextBoxColumn";
             this.quantidadeDataGridViewTextBoxColumn.ReadOnly = true;
             // 
+            // estoqueMinimoDataGridViewTextBoxColumn
+            // 
+            this.estoqueMinimoDataGridViewTextBoxColumn.DataPropertyName = "estoqueMinimo";
+            this.estoqueMinimoDataGridViewTextBoxColumn.HeaderText = "estoqueMinimo";
+            this.estoqueMinimoDataGridViewTextBoxColumn.Name = "estoqueMinimoDataGridViewTextBoxColumn";
+            this.estoqueMinimoDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
             // dataValidadeDataGridViewTextBoxColumn
             // 
             this.dataValidadeDataGridViewTextBoxColumn.DataPropertyName = "dataValidade";
@@ -195,6 +192,7 @@
             this.codTipoDataGridViewTextBoxColumn.HeaderText = "codTipo";
             this.codTipoDataGridViewTextBoxColumn.Name = "codTipoDataGridViewTextBoxColumn";
             this.codTipoDataGridViewTextBoxColumn.ReadOnly = true;
+            this.codTipoDataGridViewTextBoxColumn.Visible = false;
             // 
             // codUsuarioDataGridViewTextBoxColumn
             // 
@@ -203,6 +201,20 @@
             this.codUsuarioDataGridViewTextBoxColumn.Name = "codUsuarioDataGridViewTextBoxColumn";
             this.codUsuarioDataGridViewTextBoxColumn.ReadOnly = true;
             this.codUsuarioDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // produtosBindingSource
+            // 
+            this.produtosBindingSource.DataMember = "produtos";
+            this.produtosBindingSource.DataSource = this.setConnection;
+            // 
+            // setConnection
+            // 
+            this.setConnection.DataSetName = "SetConnection";
+            this.setConnection.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // produtosTableAdapter
+            // 
+            this.produtosTableAdapter.ClearBeforeFill = true;
             // 
             // Produtos
             // 
@@ -233,15 +245,16 @@
         private System.Windows.Forms.Button btnEditarProduto;
         private System.Windows.Forms.Button btnNovoProduto;
         private System.Windows.Forms.Button btnDefinirProducao;
-        private SetConnection setConnection;
         private System.Windows.Forms.DataGridView dgvProdutos;
         private System.Windows.Forms.BindingSource produtosBindingSource;
+        private SetConnection setConnection;
         private SetConnectionTableAdapters.produtosTableAdapter produtosTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn codProdutoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn descricaoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn precoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn unidadeDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn quantidadeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn estoqueMinimoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataValidadeDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn codTipoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn codUsuarioDataGridViewTextBoxColumn;

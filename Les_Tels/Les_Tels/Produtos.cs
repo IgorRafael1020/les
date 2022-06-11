@@ -17,7 +17,7 @@ namespace Les_Tels
             InitializeComponent();
             try
             {
-                this.produtosTableAdapter.FillByNada(this.setConnection.produtos);
+                this.produtosTableAdapter.Fill(this.setConnection.produtos);
             }
             catch (System.Exception ex)
             {
@@ -39,7 +39,7 @@ namespace Les_Tels
                     try
                     {
                         this.produtosTableAdapter.DeletaProduto(Convert.ToInt32(dgvProdutos.Rows[dgvProdutos.CurrentCell.RowIndex].Cells[0].Value.ToString()));
-                        this.produtosTableAdapter.FillByNada(this.setConnection.produtos);
+                        this.produtosTableAdapter.Fill(this.setConnection.produtos);
                     }
                     catch (System.Exception ex)
                     {
@@ -48,5 +48,16 @@ namespace Les_Tels
                 }
             }
 
+        private void btnNovoProduto_Click(object sender, EventArgs e)
+        {
+            Novo_Produto miniproduto = new Novo_Produto();
+            miniproduto.Show();
+        }
+
+        private void btnEditarProduto_Click(object sender, EventArgs e)
+        {
+            Novo_Produto miniproduto = new Novo_Produto(Convert.ToInt32(dgvProdutos.Rows[dgvProdutos.CurrentCell.RowIndex].Cells[0].Value.ToString()));
+            miniproduto.Show();
+        }
     }
 }
