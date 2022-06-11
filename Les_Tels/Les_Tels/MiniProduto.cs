@@ -55,13 +55,16 @@ namespace Les_Tels
                                         Convert.ToDouble(txtpreco.Text.ToString()),
                                         txtunidade.Text.ToString(),
                                         Convert.ToInt32(txtquantidade.Text.ToString()),
-                                        Convert.ToInt32(txtunidade.Text.ToString()), DateTime.Today,
+                                        Convert.ToInt32(txtestoqueMinimo.Text.ToString()),
+                                        null,
                                         //Convert.ToDateTime(dtpdataValidade.Text.ToString()),
                                         Convert.ToInt32(txtcodTipo.Text.ToString()),
                                         //Convert.ToInt32(txtcodUsuario.Text.ToString()),
                                         1,
                                         Convert.ToInt32(txtcodProduto.Text.ToString())
                                         );
+                    MessageBox.Show("Alterado Com sucesso");
+                    this.Close();
                 }
                 catch (System.Exception ex)
                 {
@@ -73,28 +76,19 @@ namespace Les_Tels
             {
                 try
                 {
-                    /*this.produtosTableAdapter.InsertProdutos(txtdescricao.Text.ToString(),
+                    this.produtosTableAdapter.InsertProdutos(txtdescricao.Text.ToString(),
                                         Convert.ToDouble(txtpreco.Text.ToString()),
                                         txtunidade.Text.ToString(),
                                         Convert.ToInt32(txtquantidade.Text.ToString()),
-                                        Convert.ToInt32(txtunidade.Text.ToString()),
-                                        DateTime.Today,
-                                        //Convert.ToDateTime(dtpdataValidade.Text.ToString()),
-                                        Convert.ToInt32(txtcodTipo.Text.ToString()),
-                                        //Convert.ToInt32(txtcodUsuario.Text.ToString()),
-                                        1
-                                        );*/
-                    this.produtosTableAdapter.InsertProdutos("O",
-                                        3.5,
-                                        "UN",
-                                        Convert.ToInt32(txtquantidade.Text.ToString()),
-                                        Convert.ToInt32(txtunidade.Text.ToString()),
+                                        Convert.ToInt32(txtestoqueMinimo.Text.ToString()),
                                         null,
                                         //Convert.ToDateTime(dtpdataValidade.Text.ToString()),
                                         Convert.ToInt32(txtcodTipo.Text.ToString()),
                                         //Convert.ToInt32(txtcodUsuario.Text.ToString()),
                                         1
                                         );
+                    MessageBox.Show("Inserido Com sucesso");
+                    this.Close();
                 }
                 catch (System.Exception ex)
                 {

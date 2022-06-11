@@ -34,7 +34,6 @@
             this.btnExcluirProduto = new System.Windows.Forms.Button();
             this.btnEditarProduto = new System.Windows.Forms.Button();
             this.btnNovoProduto = new System.Windows.Forms.Button();
-            this.btnDefinirProducao = new System.Windows.Forms.Button();
             this.dgvProdutos = new System.Windows.Forms.DataGridView();
             this.codProdutoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.descricaoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -48,6 +47,7 @@
             this.produtosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.setConnection = new Les_Tels.SetConnection();
             this.produtosTableAdapter = new Les_Tels.SetConnectionTableAdapters.produtosTableAdapter();
+            this.btnBusca = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProdutos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.produtosBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.setConnection)).BeginInit();
@@ -99,15 +99,6 @@
             this.btnNovoProduto.UseVisualStyleBackColor = true;
             this.btnNovoProduto.Click += new System.EventHandler(this.btnNovoProduto_Click);
             // 
-            // btnDefinirProducao
-            // 
-            this.btnDefinirProducao.Location = new System.Drawing.Point(903, 14);
-            this.btnDefinirProducao.Name = "btnDefinirProducao";
-            this.btnDefinirProducao.Size = new System.Drawing.Size(142, 23);
-            this.btnDefinirProducao.TabIndex = 12;
-            this.btnDefinirProducao.Text = "Definir Produção";
-            this.btnDefinirProducao.UseVisualStyleBackColor = true;
-            // 
             // dgvProdutos
             // 
             this.dgvProdutos.AllowUserToAddRows = false;
@@ -127,6 +118,7 @@
             this.codTipoDataGridViewTextBoxColumn,
             this.codUsuarioDataGridViewTextBoxColumn});
             this.dgvProdutos.DataSource = this.produtosBindingSource;
+            this.dgvProdutos.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dgvProdutos.Location = new System.Drawing.Point(17, 68);
             this.dgvProdutos.MultiSelect = false;
             this.dgvProdutos.Name = "dgvProdutos";
@@ -216,12 +208,22 @@
             // 
             this.produtosTableAdapter.ClearBeforeFill = true;
             // 
+            // btnBusca
+            // 
+            this.btnBusca.Location = new System.Drawing.Point(757, 12);
+            this.btnBusca.Name = "btnBusca";
+            this.btnBusca.Size = new System.Drawing.Size(26, 23);
+            this.btnBusca.TabIndex = 14;
+            this.btnBusca.Text = "Buscar";
+            this.btnBusca.UseVisualStyleBackColor = true;
+            this.btnBusca.Click += new System.EventHandler(this.btnBusca_Click);
+            // 
             // Produtos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.btnBusca);
             this.Controls.Add(this.dgvProdutos);
-            this.Controls.Add(this.btnDefinirProducao);
             this.Controls.Add(this.txtPesquisar);
             this.Controls.Add(this.cmbFiltro);
             this.Controls.Add(this.btnExcluirProduto);
@@ -244,7 +246,6 @@
         private System.Windows.Forms.Button btnExcluirProduto;
         private System.Windows.Forms.Button btnEditarProduto;
         private System.Windows.Forms.Button btnNovoProduto;
-        private System.Windows.Forms.Button btnDefinirProducao;
         private System.Windows.Forms.DataGridView dgvProdutos;
         private System.Windows.Forms.BindingSource produtosBindingSource;
         private SetConnection setConnection;
@@ -258,5 +259,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataValidadeDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn codTipoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn codUsuarioDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Button btnBusca;
     }
 }

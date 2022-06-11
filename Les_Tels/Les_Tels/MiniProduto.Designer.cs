@@ -89,7 +89,6 @@ namespace Les_Tels
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
             this.tableAdapterManager.fornecedoresTableAdapter = null;
             this.tableAdapterManager.itensSolicitacaoTableAdapter = null;
-            this.tableAdapterManager.itensVendaTableAdapter = null;
             this.tableAdapterManager.producoesTableAdapter = this.producoesTableAdapter;
             this.tableAdapterManager.produtosTableAdapter = this.produtosTableAdapter;
             this.tableAdapterManager.solicitacoesTableAdapter = null;

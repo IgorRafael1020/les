@@ -47,7 +47,10 @@
             this.lblProdutos = new System.Windows.Forms.Label();
             this.btnVendas = new System.Windows.Forms.Button();
             this.pnlJanelas = new System.Windows.Forms.Panel();
+            this.usuarios1 = new Les_Tels.Usuarios();
+            this.vendas1 = new Les_Tels.Vendas();
             this.produtos1 = new Les_Tels.Produtos();
+            this.fornecedor1 = new Les_Tels.Fornecedor();
             this.pnlTopo.SuspendLayout();
             this.pnlBarra.SuspendLayout();
             this.pnlJanelas.SuspendLayout();
@@ -295,11 +298,28 @@
             this.pnlJanelas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(221)))), ((int)(((byte)(221)))));
             this.pnlJanelas.BackgroundImage = global::Les_Tels.Properties.Resources._4_1_r;
             this.pnlJanelas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pnlJanelas.Controls.Add(this.fornecedor1);
+            this.pnlJanelas.Controls.Add(this.usuarios1);
+            this.pnlJanelas.Controls.Add(this.vendas1);
             this.pnlJanelas.Controls.Add(this.produtos1);
             this.pnlJanelas.Location = new System.Drawing.Point(144, 126);
             this.pnlJanelas.Name = "pnlJanelas";
             this.pnlJanelas.Size = new System.Drawing.Size(1119, 555);
             this.pnlJanelas.TabIndex = 2;
+            // 
+            // usuarios1
+            // 
+            this.usuarios1.Location = new System.Drawing.Point(0, 0);
+            this.usuarios1.Name = "usuarios1";
+            this.usuarios1.Size = new System.Drawing.Size(1116, 555);
+            this.usuarios1.TabIndex = 2;
+            // 
+            // vendas1
+            // 
+            this.vendas1.Location = new System.Drawing.Point(0, 0);
+            this.vendas1.Name = "vendas1";
+            this.vendas1.Size = new System.Drawing.Size(1110, 540);
+            this.vendas1.TabIndex = 1;
             // 
             // produtos1
             // 
@@ -307,6 +327,13 @@
             this.produtos1.Name = "produtos1";
             this.produtos1.Size = new System.Drawing.Size(1118, 552);
             this.produtos1.TabIndex = 0;
+            // 
+            // fornecedor1
+            // 
+            this.fornecedor1.Location = new System.Drawing.Point(6, 12);
+            this.fornecedor1.Name = "fornecedor1";
+            this.fornecedor1.Size = new System.Drawing.Size(1110, 540);
+            this.fornecedor1.TabIndex = 3;
             // 
             // Menu
             // 
@@ -351,5 +378,8 @@
         private System.Windows.Forms.Label lblTitulo;
         private CustomControls.RoundButtonControls.RoundButton rbtnMenu;
         private Produtos produtos1;
+        private Vendas vendas1;
+        private Usuarios usuarios1;
+        private Fornecedor fornecedor1;
     }
 }

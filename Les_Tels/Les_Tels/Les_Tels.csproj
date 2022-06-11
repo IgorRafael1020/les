@@ -68,11 +68,23 @@
     <Compile Include="Menu.designer.cs">
       <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
+    <Compile Include="MiniFornecedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MiniFornecedor.Designer.cs">
+      <DependentUpon>MiniFornecedor.cs</DependentUpon>
+    </Compile>
     <Compile Include="MiniProduto.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MiniProduto.Designer.cs">
       <DependentUpon>MiniProduto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MiniUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MiniUsuarios.Designer.cs">
+      <DependentUpon>MiniUsuarios.cs</DependentUpon>
     </Compile>
     <Compile Include="Produtos.cs">
       <SubType>UserControl</SubType>
@@ -129,8 +141,14 @@
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MiniFornecedor.resx">
+      <DependentUpon>MiniFornecedor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MiniProduto.resx">
       <DependentUpon>MiniProduto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MiniUsuarios.resx">
+      <DependentUpon>MiniUsuarios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Produtos.resx">
       <DependentUpon>Produtos.cs</DependentUpon>

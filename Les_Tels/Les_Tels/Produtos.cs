@@ -30,8 +30,11 @@ namespace Les_Tels
             
 
         }
-
-        private void btnExcluirProduto_Click(object sender, EventArgs e)
+        public Produtos(string sim)
+        {
+            this.produtosTableAdapter.Fill(this.setConnection.produtos);
+        }
+            private void btnExcluirProduto_Click(object sender, EventArgs e)
         {
             if (dgvProdutos.CurrentCell.RowIndex > 0)
                 if (MessageBox.Show("TEM CERTEZA QUE DESEJA DELETAR ESSE PRODUTO?", "PERIGO", MessageBoxButtons.YesNo) == DialogResult.Yes)
@@ -58,6 +61,11 @@ namespace Les_Tels
         {
             Novo_Produto miniproduto = new Novo_Produto(Convert.ToInt32(dgvProdutos.Rows[dgvProdutos.CurrentCell.RowIndex].Cells[0].Value.ToString()));
             miniproduto.Show();
+        }
+
+        private void btnBusca_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

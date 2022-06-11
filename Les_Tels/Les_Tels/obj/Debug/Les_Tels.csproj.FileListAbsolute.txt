@@ -86,3 +86,5 @@ C:\Users\Khovovo\Desktop\Agora Vai Les\Les_Tels\Les_Tels\obj\Debug\Les_Tels.cspr
 C:\Users\Khovovo\Desktop\Agora Vai Les\Les_Tels\Les_Tels\obj\Debug\Les_Tels.exe
 C:\Users\Khovovo\Desktop\Agora Vai Les\Les_Tels\Les_Tels\obj\Debug\Les_Tels.pdb
 C:\Users\Khovovo\Desktop\Agora Vai Les\Les_Tels\Les_Tels\obj\Debug\Les_Tels.Novo_Produto.resources
+C:\Users\Khovovo\Desktop\Agora Vai Les\Les_Tels\Les_Tels\obj\Debug\Les_Tels.MiniUsuarios.resources
+C:\Users\Khovovo\Desktop\Agora Vai Les\Les_Tels\Les_Tels\obj\Debug\Les_Tels.MiniFornecedor.resources

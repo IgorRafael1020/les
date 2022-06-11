@@ -15,6 +15,31 @@ namespace Les_Tels
         public Vendas()
         {
             InitializeComponent();
+            try
+            {
+                this.vendasTableAdapter.Fill(this.setConnection.vendas);
+            }
+            catch (Exception)
+            {
+            }
+            
+        }
+
+        private void dgvVendas_SelectionChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                this.itensVendaTableAdapter.Fill(this.setConnection.itensVenda, Convert.ToInt32(dgvVendas.Rows[dgvVendas.CurrentCell.RowIndex].Cells[0].Value.ToString()));
+            }
+            catch (Exception)
+            {
+            }
+            
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
