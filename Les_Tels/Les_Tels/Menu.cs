@@ -19,56 +19,82 @@ namespace Les_Tels
 
         private void rbtnMenu_Click(object sender, EventArgs e)
         {
-
+            pnlJanelas.Controls.Clear();
+            limparBotoes();
         }
 
         private void btnVendas_Click(object sender, EventArgs e)
         {
+            pnlJanelas.Controls.Clear();
             Vendas vendas = new Vendas();
             pnlJanelas.Controls.Add(vendas);
-            vendas.Show();
+            limparBotoes();
+            btnVendas.BackgroundImage = Les_Tels.Properties.Resources.Vendas_Amarelo_Preto;
         }
 
         private void btnProdutos_Click(object sender, EventArgs e)
         {
+            pnlJanelas.Controls.Clear();
             Produtos produtos = new Produtos();
             pnlJanelas.Controls.Add(produtos);
-            produtos.Show();
+            limparBotoes();
+            btnProdutos.BackgroundImage = Les_Tels.Properties.Resources.Produtos_Amarelo_Preto;
         }
 
         private void btnCaixa_Click(object sender, EventArgs e)
         {
+            pnlJanelas.Controls.Clear();
             Caixa caixa = new Caixa();
             pnlJanelas.Controls.Add(caixa);
-            caixa.Show();
+            limparBotoes();
+            btnCaixa.BackgroundImage = Les_Tels.Properties.Resources.Caixa_Amarelo_Preto;
         }
 
-        private void btnPedidos_Click(object sender, EventArgs e)
+        private void btnSolicitacoes_Click(object sender, EventArgs e)
         {
-            /*Pedidos vendas = new Vendas();
-            pnlJanelas.Controls.Add(vendas);
-            vendas.Show();*/
+            pnlJanelas.Controls.Clear();
+            Solicitacoes solicitacoes = new Solicitacoes();
+            pnlJanelas.Controls.Add(solicitacoes);
+            limparBotoes();
+            btnSolicitacoes.BackgroundImage = Les_Tels.Properties.Resources.Solicitações_Amarelo_Preto;
         }
 
         private void btnRelatorios_Click(object sender, EventArgs e)
         {
+            pnlJanelas.Controls.Clear();
             Relatorios vendas = new Relatorios();
             pnlJanelas.Controls.Add(vendas);
-            vendas.Show();
+            limparBotoes();
+            btnRelatorios.BackgroundImage = Les_Tels.Properties.Resources.Relatório_Amarelo_Preto;
         }
 
         private void btnFornecedores_Click(object sender, EventArgs e)
         {
+            pnlJanelas.Controls.Clear();
             Fornecedor vendas = new Fornecedor();
             pnlJanelas.Controls.Add(vendas);
-            vendas.Show();
+            limparBotoes();
+            btnFornecedores.BackgroundImage = Les_Tels.Properties.Resources.Fornecedor_Amarelo_Preto;
         }
 
         private void btnUsuarios_Click(object sender, EventArgs e)
         {
+            pnlJanelas.Controls.Clear();
             Usuarios vendas = new Usuarios();
             pnlJanelas.Controls.Add(vendas);
-            vendas.Show();
+            limparBotoes();
+            btnUsuarios.BackgroundImage = Les_Tels.Properties.Resources.Usuários_Amarelo_Preto;
+        }
+
+        private void limparBotoes()
+        {
+            btnVendas.BackgroundImage = Les_Tels.Properties.Resources.Vendas_Cinza_Preto;
+            btnProdutos.BackgroundImage = Les_Tels.Properties.Resources.Produtos_Cinza_Preto;
+            btnCaixa.BackgroundImage = Les_Tels.Properties.Resources.Caixa_Cinza_Preto;
+            btnSolicitacoes.BackgroundImage = Les_Tels.Properties.Resources.Solicitações_Cinza_Preto;
+            btnRelatorios.BackgroundImage = Les_Tels.Properties.Resources.Relatório_Cinza_Preto;
+            btnFornecedores.BackgroundImage = Les_Tels.Properties.Resources.Fornecedor_Cinza_Preto;
+            btnUsuarios.BackgroundImage = Les_Tels.Properties.Resources.Usuários_Cinza_Preto;
         }
     }
 }

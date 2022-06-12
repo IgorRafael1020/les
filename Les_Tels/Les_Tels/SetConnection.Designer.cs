@@ -5467,7 +5467,7 @@ SELECT codFornecedor, nomeRazao, nomeFantasia, cnpj, cep, uf, cidade, bairro, en
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::Les_Tels.Properties.Settings.Default.PadariaConnectionString1;
+            this._connection.ConnectionString = global::Les_Tels.Properties.Settings.Default.PadariaConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -5567,7 +5567,7 @@ INSERT INTO [dbo].[fornecedores] ([nomeRazao], [nomeFantasia], [cnpj], [cep], [u
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
-        public virtual SetConnection.fornecedoresDataTable GetDataBy(int codfornecedor) {
+        public virtual SetConnection.fornecedoresDataTable GetDataBy1(int codfornecedor) {
             this.Adapter.SelectCommand = this.CommandCollection[2];
             this.Adapter.SelectCommand.Parameters[0].Value = ((int)(codfornecedor));
             SetConnection.fornecedoresDataTable dataTable = new SetConnection.fornecedoresDataTable();
@@ -6307,7 +6307,7 @@ SELECT codSolicitacao, codProduto, quantidade FROM itensSolicitacao WHERE (codPr
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::Les_Tels.Properties.Settings.Default.PadariaConnectionString1;
+            this._connection.ConnectionString = global::Les_Tels.Properties.Settings.Default.PadariaConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -6592,7 +6592,7 @@ SELECT codSolicitacao, codProduto, quantidade FROM itensSolicitacao WHERE (codPr
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::Les_Tels.Properties.Settings.Default.PadariaConnectionString1;
+            this._connection.ConnectionString = global::Les_Tels.Properties.Settings.Default.PadariaConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -6826,7 +6826,7 @@ SELECT codProducao, codProduto, dataProducao, quantidade, codUsuario FROM produc
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::Les_Tels.Properties.Settings.Default.PadariaConnectionString1;
+            this._connection.ConnectionString = global::Les_Tels.Properties.Settings.Default.PadariaConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -7204,7 +7204,7 @@ SELECT codProduto, descricao, preco, unidade, quantidade, estoqueMinimo, dataVal
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::Les_Tels.Properties.Settings.Default.PadariaConnectionString1;
+            this._connection.ConnectionString = global::Les_Tels.Properties.Settings.Default.PadariaConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -8009,7 +8009,7 @@ SELECT codSolicitacao, codFornecedor, dataPedido, dataEntrega, obs, codUsuario F
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::Les_Tels.Properties.Settings.Default.PadariaConnectionString1;
+            this._connection.ConnectionString = global::Les_Tels.Properties.Settings.Default.PadariaConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -8387,7 +8387,7 @@ SELECT codTipo, tipo, codUsuario FROM tipos WHERE (codTipo = @codTipo)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::Les_Tels.Properties.Settings.Default.PadariaConnectionString1;
+            this._connection.ConnectionString = global::Les_Tels.Properties.Settings.Default.PadariaConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -8744,7 +8744,7 @@ SELECT codUsuario, login, senha, nivel FROM usuarios WHERE (codUsuario = @codUsu
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::Les_Tels.Properties.Settings.Default.PadariaConnectionString1;
+            this._connection.ConnectionString = global::Les_Tels.Properties.Settings.Default.PadariaConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -8827,7 +8827,7 @@ SELECT codUsuario, login, senha, nivel FROM usuarios WHERE (codUsuario = @codUsu
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
-        public virtual SetConnection.usuariosDataTable GetDataBy(int codUsuario) {
+        public virtual SetConnection.usuariosDataTable GetDataBy1(int codUsuario) {
             this.Adapter.SelectCommand = this.CommandCollection[2];
             this.Adapter.SelectCommand.Parameters[0].Value = ((int)(codUsuario));
             SetConnection.usuariosDataTable dataTable = new SetConnection.usuariosDataTable();
@@ -9249,7 +9249,7 @@ SELECT codVenda, dataVenda, codUsuario FROM vendas WHERE (codVenda = @codVenda)"
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::Les_Tels.Properties.Settings.Default.PadariaConnectionString1;
+            this._connection.ConnectionString = global::Les_Tels.Properties.Settings.Default.PadariaConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]

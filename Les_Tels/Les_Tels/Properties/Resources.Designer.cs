@@ -19,7 +19,7 @@ namespace Les_Tels.Properties {
     // através de uma ferramenta como ResGen ou Visual Studio.
     // Para adicionar ou remover um associado, edite o arquivo .ResX e execute ResGen novamente
     // com a opção /str, ou recrie o projeto do VS.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -76,6 +76,16 @@ namespace Les_Tels.Properties {
         internal static System.Drawing.Bitmap _4_1_r {
             get {
                 object obj = ResourceManager.GetObject("4 1 r", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _4_1_rb {
+            get {
+                object obj = ResourceManager.GetObject("4 1 rb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -153,26 +163,6 @@ namespace Les_Tels.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Pedidos_Amarelo_Preto {
-            get {
-                object obj = ResourceManager.GetObject("Pedidos Amarelo Preto", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Pedidos_Cinza_Preto {
-            get {
-                object obj = ResourceManager.GetObject("Pedidos Cinza Preto", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap Produtos_Amarelo_Preto {
             get {
                 object obj = ResourceManager.GetObject("Produtos Amarelo Preto", resourceCulture);
@@ -206,6 +196,26 @@ namespace Les_Tels.Properties {
         internal static System.Drawing.Bitmap Relatório_Cinza_Preto {
             get {
                 object obj = ResourceManager.GetObject("Relatório Cinza Preto", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Solicitações_Amarelo_Preto {
+            get {
+                object obj = ResourceManager.GetObject("Solicitações Amarelo Preto", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Solicitações_Cinza_Preto {
+            get {
+                object obj = ResourceManager.GetObject("Solicitações Cinza Preto", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -118,61 +118,64 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="4 1 r" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\4 1 r.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="4 1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\4 1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Usuários Amarelo Preto" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Usuários Amarelo Preto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Bigor Padaria Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Bigor Padaria Icon.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Caixa Amarelo Preto" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Caixa Amarelo Preto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Caixa Cinza Preto" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Caixa Cinza Preto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="mais2 Preto Cinza" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mais2 Preto Cinza.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Fornecedor Amarelo Preto" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Fornecedor Amarelo Preto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Fornecedor Cinza Preto" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Fornecedor Cinza Preto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="mais2 Preto Cinza" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mais2 Preto Cinza.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Notificação Cinza Preto" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Notificação Cinza Preto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Pedidos Amarelo Preto" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Pedidos Amarelo Preto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Pedidos Cinza Preto" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Pedidos Cinza Preto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Produtos Amarelo Preto" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Produtos Amarelo Preto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Produtos Cinza Preto" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Produtos Cinza Preto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="4 1 r" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\4 1 r.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Relatório Amarelo Preto" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Relatório Amarelo Preto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Relatório Cinza Preto" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Relatório Cinza Preto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Usuários Amarelo Preto" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Usuários Amarelo Preto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Caixa Cinza Preto" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Caixa Cinza Preto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Usuários Cinza Preto" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Usuários Cinza Preto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Solicitações Cinza Preto" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Solicitações Cinza Preto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="4 1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\4 1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Caixa Amarelo Preto" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Caixa Amarelo Preto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Relatório Amarelo Preto" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Relatório Amarelo Preto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Fornecedor Cinza Preto" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Fornecedor Cinza Preto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Produtos Cinza Preto" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Produtos Cinza Preto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Vendas Amarelo Preto" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Vendas Amarelo Preto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Relatório Cinza Preto" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Relatório Cinza Preto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Vendas Cinza Preto" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Vendas Cinza Preto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Solicitações Amarelo Preto" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Solicitações Amarelo Preto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Notificação Cinza Preto" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Notificação Cinza Preto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="4 1 rb" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\4 1 rb.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
