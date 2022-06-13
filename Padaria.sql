@@ -2,6 +2,7 @@
 
 create table usuarios(
 	codUsuario int identity(1,1) primary key,
+	usuario nvarchar(30) NOT NULL,
     login nvarchar(30) NOT NULL,   
     senha nvarchar(30) NOT NULL,
 	nivel int NOT NULL
@@ -65,13 +66,13 @@ create table vendas(
 create table itensSolicitacao(
     codSolicitacao int NOT NULL,
     codProduto int NOT NULL,
-    quantidade int NOT NULL
+    quantidade float NOT NULL
 );
 
 create table itensVenda(
     codVenda int NOT NULL,
     codProduto int NOT NULL,
-    quantidade int NOT NULL
+    quantidade float NOT NULL
 );
 
 --Criação das chaves estrangeiras
@@ -116,9 +117,9 @@ ADD CONSTRAINT itensVenda_pk PRIMARY KEY (codVenda, codProduto);
 
 --Dados
 
-insert into usuarios values ('admin', 'admin', 1);
-insert into usuarios values ('user', 'user', 2);
-insert into usuarios values ('user2', 'user2', 3);
+insert into usuarios values ('Gerente', 'admin', 'admin', 1);
+insert into usuarios values ('Funcionário', 'user', 'user', 2);
+insert into usuarios values ('Vendedor', 'user2', 'user2', 3);
 
 insert into tipos values ('Produzido', 1);
 insert into tipos values ('Ingrediente', 1);

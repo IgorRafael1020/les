@@ -17,7 +17,9 @@ namespace Les_Tels
             InitializeComponent();
             try
             {
-                this.produtosTableAdapter.Fill(this.setConnection.produtos);
+                tiposTableAdapter.Fill(setConnection.tipos);
+                produtosTableAdapter.Fill(setConnection.produtos);
+                producoesTableAdapter.Fill(setConnection.producoes);
             }
             catch (System.Exception ex)
             {
@@ -32,7 +34,7 @@ namespace Les_Tels
         }
         public Produtos(string sim)
         {
-            this.produtosTableAdapter.Fill(this.setConnection.produtos);
+            produtosTableAdapter.Fill(setConnection.produtos);
         }
             private void btnExcluirProduto_Click(object sender, EventArgs e)
         {
@@ -41,8 +43,8 @@ namespace Les_Tels
                 {
                     try
                     {
-                        this.produtosTableAdapter.DeletaProduto(Convert.ToInt32(dgvProdutos.Rows[dgvProdutos.CurrentCell.RowIndex].Cells[0].Value.ToString()));
-                        this.produtosTableAdapter.Fill(this.setConnection.produtos);
+                        produtosTableAdapter.DeletaProduto(Convert.ToInt32(dgvProdutos.Rows[dgvProdutos.CurrentCell.RowIndex].Cells[0].Value.ToString()));
+                        produtosTableAdapter.Fill(setConnection.produtos);
                     }
                     catch (System.Exception ex)
                     {
@@ -63,9 +65,25 @@ namespace Les_Tels
             miniproduto.Show();
         }
 
-        private void btnBusca_Click(object sender, EventArgs e)
+        private void btnPesquisar_Click(object sender, EventArgs e)
         {
+            produtosTableAdapter.FillByDescricao(setConnection.produtos, '%' + txtDescricao.Text.ToUpper() + '%');
+        }
 
+        private void btnLimpar_Click(object sender, EventArgs e)
+        {
+            produtosTableAdapter.Fill(setConnection.produtos);
+        }
+
+        private void btnProducao_Click(object sender, EventArgs e)
+        {
+            producoesTableAdapter.FillByDataProducao(setConnection.producoes, dtpDiaProducao.Value);
+            MessageBox.Show(dtpDiaProducao.Value.ToString("dd-MM-yyyy"));
+        }
+
+        private void btnProducaoAtual_Click(object sender, EventArgs e)
+        {
+            producoesTableAdapter.FillByDataProducao(setConnection.producoes, DateTime.Today);
         }
     }
 }

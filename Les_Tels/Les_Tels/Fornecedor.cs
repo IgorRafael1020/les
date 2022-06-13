@@ -54,5 +54,16 @@ namespace Les_Tels
             this.tableAdapterManager.UpdateAll(this.setConnection);
 
         }
+
+        private void btnPesquisar_Click(object sender, EventArgs e)
+        {
+            fornecedoresTableAdapter.FillByNomeFantasia(setConnection.fornecedores, '%'+ txtFornecedor.Text.ToUpper() +'%');
+            txtFornecedor.Text = "";
+        }
+
+        private void btnLimpar_Click(object sender, EventArgs e)
+        {
+            fornecedoresTableAdapter.Fill(setConnection.fornecedores);
+        }
     }
 }

@@ -15,14 +15,14 @@ namespace Les_Tels
         public Usuarios()
         {
             InitializeComponent();
-            this.usuariosTableAdapter.Fill(this.setConnection.usuarios);
+            usuariosTableAdapter.Fill(setConnection.usuarios);
         }
 
         private void usuariosBindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
-            this.Validate();
-            this.usuariosBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.setConnection);
+            Validate();
+            usuariosBindingSource.EndEdit();
+            tableAdapterManager.UpdateAll(setConnection);
 
         }
 
@@ -45,8 +45,8 @@ namespace Les_Tels
                 {
                     try
                     {
-                        this.usuariosTableAdapter.DeletarUsuario(Convert.ToInt32(dgvUsuarios.Rows[dgvUsuarios.CurrentCell.RowIndex].Cells[0].Value.ToString()));
-                        this.usuariosTableAdapter.Fill(this.setConnection.usuarios);
+                        usuariosTableAdapter.DeleteQuery(Convert.ToInt32(dgvUsuarios.Rows[dgvUsuarios.CurrentCell.RowIndex].Cells[0].Value.ToString()));
+                        usuariosTableAdapter.Fill(setConnection.usuarios);
                     }
                     catch (System.Exception ex)
                     {
@@ -54,6 +54,17 @@ namespace Les_Tels
                     }
                 }
             
+        }
+
+        private void btnPesquisar_Click(object sender, EventArgs e)
+        {
+            usuariosTableAdapter.FillByNomeUsuario(setConnection.usuarios, '%'+txtUsuario.Text.ToUpper()+'%');
+            txtUsuario.Text = "";
+        }
+
+        private void btnLimpar_Click(object sender, EventArgs e)
+        {
+            usuariosTableAdapter.Fill(setConnection.usuarios);
         }
     }
 }

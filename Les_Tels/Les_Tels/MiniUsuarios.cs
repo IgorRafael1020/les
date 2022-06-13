@@ -20,7 +20,7 @@ namespace Les_Tels
         public MiniUsuarios(int codigo)
         {
             InitializeComponent();
-            this.usuariosTableAdapter.FillByCodUsuario(this.setConnection.usuarios,codigo);
+            this.usuariosTableAdapter.FillByCodigo(this.setConnection.usuarios,codigo);
             update = 1;
         }
 
@@ -45,7 +45,8 @@ namespace Les_Tels
             {
                 try
                 {
-                    this.usuariosTableAdapter.UpdateUsuarios(txtLogin.Text.ToString(),
+                    this.usuariosTableAdapter.UpdateQuery("",
+                                        txtLogin.Text.ToString(),
                                         txtSenha.Text.ToString(),
                                         Convert.ToInt32(txtNivel.Text.ToString()),
                                         Convert.ToInt32(txtCodUsuario.Text.ToString())
@@ -63,7 +64,8 @@ namespace Les_Tels
             {
                 try
                 {
-                    this.usuariosTableAdapter.InsertUsuarios(txtLogin.Text.ToString(),
+                    this.usuariosTableAdapter.InsertQuery("",
+                                        txtLogin.Text.ToString(),
                                         txtSenha.Text.ToString(),
                                         Convert.ToInt32(txtNivel.Text.ToString())
                                         );

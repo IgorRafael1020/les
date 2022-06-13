@@ -87,7 +87,7 @@ C:\Users\Khovovo\Desktop\Agora Vai Les\Les_Tels\Les_Tels\obj\Debug\Les_Tels.pdb
 C:\Users\Khovovo\Desktop\Agora Vai Les\Les_Tels\Les_Tels\obj\Debug\Les_Tels.Novo_Produto.resources
 C:\Users\Khovovo\Desktop\Agora Vai Les\Les_Tels\Les_Tels\obj\Debug\Les_Tels.MiniUsuarios.resources
 C:\Users\Khovovo\Desktop\Agora Vai Les\Les_Tels\Les_Tels\obj\Debug\Les_Tels.MiniFornecedor.resources
-C:\Users\Igor\Documents\Fatec\5º Semestre\LES\les\Les_Tels\Les_Tels\obj\Debug\Les_Tels.csproj.AssemblyReference.cache
 C:\Users\Igor\Documents\Fatec\5º Semestre\LES\les\Les_Tels\Les_Tels\obj\Debug\Les_Tels.MiniFornecedor.resources
 C:\Users\Igor\Documents\Fatec\5º Semestre\LES\les\Les_Tels\Les_Tels\obj\Debug\Les_Tels.Novo_Produto.resources
 C:\Users\Igor\Documents\Fatec\5º Semestre\LES\les\Les_Tels\Les_Tels\obj\Debug\Les_Tels.MiniUsuarios.resources
+C:\Users\Igor\Documents\Fatec\5º Semestre\LES\les\Les_Tels\Les_Tels\obj\Debug\Les_Tels.csproj.AssemblyReference.cache

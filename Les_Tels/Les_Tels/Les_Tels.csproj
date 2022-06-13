@@ -101,6 +101,11 @@
     <Compile Include="MiniUsuarios.Designer.cs">
       <DependentUpon>MiniUsuarios.cs</DependentUpon>
     </Compile>
+    <Compile Include="PadariaDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PadariaDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Produtos.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -190,6 +195,17 @@
     <EmbeddedResource Include="Vendas.resx">
       <DependentUpon>Vendas.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="PadariaDataSet.xsc">
+      <DependentUpon>PadariaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PadariaDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PadariaDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PadariaDataSet.xss">
+      <DependentUpon>PadariaDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

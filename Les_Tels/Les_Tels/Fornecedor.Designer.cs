@@ -32,8 +32,7 @@
             this.btnNovoFornecedor = new System.Windows.Forms.Button();
             this.btnEditarFornecedor = new System.Windows.Forms.Button();
             this.btnExcluirFornecedor = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtFornecedor = new System.Windows.Forms.TextBox();
             this.setConnection = new Les_Tels.SetConnection();
             this.fornecedoresBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.fornecedoresTableAdapter = new Les_Tels.SetConnectionTableAdapters.fornecedoresTableAdapter();
@@ -50,6 +49,8 @@
             this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnLimpar = new System.Windows.Forms.Button();
+            this.btnPesquisar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.setConnection)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fornecedoresBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFornecedor)).BeginInit();
@@ -85,20 +86,12 @@
             this.btnExcluirFornecedor.UseVisualStyleBackColor = true;
             this.btnExcluirFornecedor.Click += new System.EventHandler(this.button3_Click);
             // 
-            // comboBox1
+            // txtFornecedor
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(464, 14);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(142, 21);
-            this.comboBox1.TabIndex = 3;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(612, 14);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(142, 20);
-            this.textBox1.TabIndex = 4;
+            this.txtFornecedor.Location = new System.Drawing.Point(464, 17);
+            this.txtFornecedor.Name = "txtFornecedor";
+            this.txtFornecedor.Size = new System.Drawing.Size(142, 20);
+            this.txtFornecedor.TabIndex = 4;
             // 
             // setConnection
             // 
@@ -237,13 +230,34 @@
             this.dataGridViewTextBoxColumn11.ReadOnly = true;
             this.dataGridViewTextBoxColumn11.Visible = false;
             // 
+            // btnLimpar
+            // 
+            this.btnLimpar.Location = new System.Drawing.Point(693, 14);
+            this.btnLimpar.Name = "btnLimpar";
+            this.btnLimpar.Size = new System.Drawing.Size(75, 23);
+            this.btnLimpar.TabIndex = 21;
+            this.btnLimpar.Text = "Limpar";
+            this.btnLimpar.UseVisualStyleBackColor = true;
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
+            // 
+            // btnPesquisar
+            // 
+            this.btnPesquisar.Location = new System.Drawing.Point(612, 14);
+            this.btnPesquisar.Name = "btnPesquisar";
+            this.btnPesquisar.Size = new System.Drawing.Size(75, 23);
+            this.btnPesquisar.TabIndex = 20;
+            this.btnPesquisar.Text = "Pesquisar";
+            this.btnPesquisar.UseVisualStyleBackColor = true;
+            this.btnPesquisar.Click += new System.EventHandler(this.btnPesquisar_Click);
+            // 
             // Fornecedor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.btnLimpar);
+            this.Controls.Add(this.btnPesquisar);
             this.Controls.Add(this.dgvFornecedor);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.txtFornecedor);
             this.Controls.Add(this.btnExcluirFornecedor);
             this.Controls.Add(this.btnEditarFornecedor);
             this.Controls.Add(this.btnNovoFornecedor);
@@ -262,8 +276,7 @@
         private System.Windows.Forms.Button btnNovoFornecedor;
         private System.Windows.Forms.Button btnEditarFornecedor;
         private System.Windows.Forms.Button btnExcluirFornecedor;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtFornecedor;
         private SetConnection setConnection;
         private System.Windows.Forms.BindingSource fornecedoresBindingSource;
         private SetConnectionTableAdapters.fornecedoresTableAdapter fornecedoresTableAdapter;
@@ -280,5 +293,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
+        private System.Windows.Forms.Button btnLimpar;
+        private System.Windows.Forms.Button btnPesquisar;
     }
 }

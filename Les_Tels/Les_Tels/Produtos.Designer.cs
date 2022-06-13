@@ -29,8 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.txtPesquisar = new System.Windows.Forms.TextBox();
-            this.cmbFiltro = new System.Windows.Forms.ComboBox();
+            this.txtDescricao = new System.Windows.Forms.TextBox();
             this.btnExcluirProduto = new System.Windows.Forms.Button();
             this.btnEditarProduto = new System.Windows.Forms.Button();
             this.btnNovoProduto = new System.Windows.Forms.Button();
@@ -47,27 +46,40 @@
             this.produtosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.setConnection = new Les_Tels.SetConnection();
             this.produtosTableAdapter = new Les_Tels.SetConnectionTableAdapters.produtosTableAdapter();
-            this.btnBusca = new System.Windows.Forms.Button();
+            this.tiposBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tiposTableAdapter = new Les_Tels.SetConnectionTableAdapters.tiposTableAdapter();
+            this.tableAdapterManager = new Les_Tels.SetConnectionTableAdapters.TableAdapterManager();
+            this.cmbTipo = new System.Windows.Forms.ComboBox();
+            this.producoesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.producoesTableAdapter = new Les_Tels.SetConnectionTableAdapters.producoesTableAdapter();
+            this.dgvProducoes = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.dtpDiaProducao = new System.Windows.Forms.DateTimePicker();
+            this.btnLimpar = new System.Windows.Forms.Button();
+            this.btnPesquisar = new System.Windows.Forms.Button();
+            this.btnProducao = new System.Windows.Forms.Button();
+            this.btnProducaoAtual = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProdutos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.produtosBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.setConnection)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tiposBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.producoesBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvProducoes)).BeginInit();
             this.SuspendLayout();
             // 
-            // txtPesquisar
+            // txtDescricao
             // 
-            this.txtPesquisar.Location = new System.Drawing.Point(609, 14);
-            this.txtPesquisar.Name = "txtPesquisar";
-            this.txtPesquisar.Size = new System.Drawing.Size(142, 20);
-            this.txtPesquisar.TabIndex = 10;
-            // 
-            // cmbFiltro
-            // 
-            this.cmbFiltro.FormattingEnabled = true;
-            this.cmbFiltro.Location = new System.Drawing.Point(461, 14);
-            this.cmbFiltro.Name = "cmbFiltro";
-            this.cmbFiltro.Size = new System.Drawing.Size(142, 21);
-            this.cmbFiltro.TabIndex = 9;
-            this.cmbFiltro.Text = "Filtrar por Tipo";
+            this.txtDescricao.Location = new System.Drawing.Point(600, 17);
+            this.txtDescricao.Name = "txtDescricao";
+            this.txtDescricao.Size = new System.Drawing.Size(142, 20);
+            this.txtDescricao.TabIndex = 10;
             // 
             // btnExcluirProduto
             // 
@@ -119,7 +131,7 @@
             this.codUsuarioDataGridViewTextBoxColumn});
             this.dgvProdutos.DataSource = this.produtosBindingSource;
             this.dgvProdutos.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
-            this.dgvProdutos.Location = new System.Drawing.Point(17, 68);
+            this.dgvProdutos.Location = new System.Drawing.Point(17, 52);
             this.dgvProdutos.MultiSelect = false;
             this.dgvProdutos.Name = "dgvProdutos";
             this.dgvProdutos.ReadOnly = true;
@@ -208,24 +220,200 @@
             // 
             this.produtosTableAdapter.ClearBeforeFill = true;
             // 
-            // btnBusca
+            // tiposBindingSource
             // 
-            this.btnBusca.Location = new System.Drawing.Point(757, 12);
-            this.btnBusca.Name = "btnBusca";
-            this.btnBusca.Size = new System.Drawing.Size(26, 23);
-            this.btnBusca.TabIndex = 14;
-            this.btnBusca.Text = "Buscar";
-            this.btnBusca.UseVisualStyleBackColor = true;
-            this.btnBusca.Click += new System.EventHandler(this.btnBusca_Click);
+            this.tiposBindingSource.DataMember = "tipos";
+            this.tiposBindingSource.DataSource = this.setConnection;
+            // 
+            // tiposTableAdapter
+            // 
+            this.tiposTableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.fornecedoresTableAdapter = null;
+            this.tableAdapterManager.itensSolicitacaoTableAdapter = null;
+            this.tableAdapterManager.producoesTableAdapter = null;
+            this.tableAdapterManager.produtosTableAdapter = null;
+            this.tableAdapterManager.solicitacoesTableAdapter = null;
+            this.tableAdapterManager.tiposTableAdapter = this.tiposTableAdapter;
+            this.tableAdapterManager.UpdateOrder = Les_Tels.SetConnectionTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.usuariosTableAdapter = null;
+            this.tableAdapterManager.vendasTableAdapter = null;
+            // 
+            // cmbTipo
+            // 
+            this.cmbTipo.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tiposBindingSource, "tipo", true));
+            this.cmbTipo.DataSource = this.tiposBindingSource;
+            this.cmbTipo.DisplayMember = "tipo";
+            this.cmbTipo.FormattingEnabled = true;
+            this.cmbTipo.Location = new System.Drawing.Point(461, 16);
+            this.cmbTipo.Name = "cmbTipo";
+            this.cmbTipo.Size = new System.Drawing.Size(121, 21);
+            this.cmbTipo.TabIndex = 15;
+            this.cmbTipo.ValueMember = "codTipo";
+            // 
+            // producoesBindingSource
+            // 
+            this.producoesBindingSource.DataMember = "producoes";
+            this.producoesBindingSource.DataSource = this.setConnection;
+            // 
+            // producoesTableAdapter
+            // 
+            this.producoesTableAdapter.ClearBeforeFill = true;
+            // 
+            // dgvProducoes
+            // 
+            this.dgvProducoes.AllowUserToAddRows = false;
+            this.dgvProducoes.AllowUserToDeleteRows = false;
+            this.dgvProducoes.AllowUserToResizeColumns = false;
+            this.dgvProducoes.AllowUserToResizeRows = false;
+            this.dgvProducoes.AutoGenerateColumns = false;
+            this.dgvProducoes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvProducoes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn10,
+            this.dataGridViewTextBoxColumn11,
+            this.dataGridViewTextBoxColumn12,
+            this.dataGridViewTextBoxColumn13,
+            this.dataGridViewTextBoxColumn14});
+            this.dgvProducoes.DataSource = this.producoesBindingSource;
+            this.dgvProducoes.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
+            this.dgvProducoes.Location = new System.Drawing.Point(17, 295);
+            this.dgvProducoes.MultiSelect = false;
+            this.dgvProducoes.Name = "dgvProducoes";
+            this.dgvProducoes.ReadOnly = true;
+            this.dgvProducoes.RowHeadersVisible = false;
+            this.dgvProducoes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvProducoes.Size = new System.Drawing.Size(1028, 220);
+            this.dgvProducoes.TabIndex = 16;
+            // 
+            // dataGridViewTextBoxColumn10
+            // 
+            this.dataGridViewTextBoxColumn10.DataPropertyName = "codProducao";
+            this.dataGridViewTextBoxColumn10.HeaderText = "codProducao";
+            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            this.dataGridViewTextBoxColumn10.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn11
+            // 
+            this.dataGridViewTextBoxColumn11.DataPropertyName = "codProduto";
+            this.dataGridViewTextBoxColumn11.HeaderText = "codProduto";
+            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
+            this.dataGridViewTextBoxColumn11.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn12
+            // 
+            this.dataGridViewTextBoxColumn12.DataPropertyName = "dataProducao";
+            this.dataGridViewTextBoxColumn12.HeaderText = "dataProducao";
+            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
+            this.dataGridViewTextBoxColumn12.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn13
+            // 
+            this.dataGridViewTextBoxColumn13.DataPropertyName = "quantidade";
+            this.dataGridViewTextBoxColumn13.HeaderText = "quantidade";
+            this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
+            this.dataGridViewTextBoxColumn13.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn14
+            // 
+            this.dataGridViewTextBoxColumn14.DataPropertyName = "codUsuario";
+            this.dataGridViewTextBoxColumn14.HeaderText = "codUsuario";
+            this.dataGridViewTextBoxColumn14.Name = "dataGridViewTextBoxColumn14";
+            this.dataGridViewTextBoxColumn14.ReadOnly = true;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(313, 266);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(142, 23);
+            this.button1.TabIndex = 19;
+            this.button1.Text = "Excluir Produto";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(165, 266);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(142, 23);
+            this.button2.TabIndex = 18;
+            this.button2.Text = "Editar Produto";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(17, 266);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(142, 23);
+            this.button3.TabIndex = 17;
+            this.button3.Text = "Novo Produto";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // dtpDiaProducao
+            // 
+            this.dtpDiaProducao.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpDiaProducao.Location = new System.Drawing.Point(461, 269);
+            this.dtpDiaProducao.Name = "dtpDiaProducao";
+            this.dtpDiaProducao.Size = new System.Drawing.Size(100, 20);
+            this.dtpDiaProducao.TabIndex = 20;
+            // 
+            // btnLimpar
+            // 
+            this.btnLimpar.Location = new System.Drawing.Point(829, 14);
+            this.btnLimpar.Name = "btnLimpar";
+            this.btnLimpar.Size = new System.Drawing.Size(75, 23);
+            this.btnLimpar.TabIndex = 23;
+            this.btnLimpar.Text = "Limpar";
+            this.btnLimpar.UseVisualStyleBackColor = true;
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
+            // 
+            // btnPesquisar
+            // 
+            this.btnPesquisar.Location = new System.Drawing.Point(748, 14);
+            this.btnPesquisar.Name = "btnPesquisar";
+            this.btnPesquisar.Size = new System.Drawing.Size(75, 23);
+            this.btnPesquisar.TabIndex = 22;
+            this.btnPesquisar.Text = "Pesquisar";
+            this.btnPesquisar.UseVisualStyleBackColor = true;
+            this.btnPesquisar.Click += new System.EventHandler(this.btnPesquisar_Click);
+            // 
+            // btnProducao
+            // 
+            this.btnProducao.Location = new System.Drawing.Point(567, 266);
+            this.btnProducao.Name = "btnProducao";
+            this.btnProducao.Size = new System.Drawing.Size(75, 23);
+            this.btnProducao.TabIndex = 24;
+            this.btnProducao.Text = "Pesquisar";
+            this.btnProducao.UseVisualStyleBackColor = true;
+            this.btnProducao.Click += new System.EventHandler(this.btnProducao_Click);
+            // 
+            // btnProducaoAtual
+            // 
+            this.btnProducaoAtual.Location = new System.Drawing.Point(648, 266);
+            this.btnProducaoAtual.Name = "btnProducaoAtual";
+            this.btnProducaoAtual.Size = new System.Drawing.Size(112, 23);
+            this.btnProducaoAtual.TabIndex = 25;
+            this.btnProducaoAtual.Text = "Produção Atual";
+            this.btnProducaoAtual.UseVisualStyleBackColor = true;
+            this.btnProducaoAtual.Click += new System.EventHandler(this.btnProducaoAtual_Click);
             // 
             // Produtos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.btnBusca);
+            this.Controls.Add(this.btnProducaoAtual);
+            this.Controls.Add(this.btnProducao);
+            this.Controls.Add(this.btnLimpar);
+            this.Controls.Add(this.btnPesquisar);
+            this.Controls.Add(this.dtpDiaProducao);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.dgvProducoes);
+            this.Controls.Add(this.cmbTipo);
             this.Controls.Add(this.dgvProdutos);
-            this.Controls.Add(this.txtPesquisar);
-            this.Controls.Add(this.cmbFiltro);
+            this.Controls.Add(this.txtDescricao);
             this.Controls.Add(this.btnExcluirProduto);
             this.Controls.Add(this.btnEditarProduto);
             this.Controls.Add(this.btnNovoProduto);
@@ -234,6 +422,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvProdutos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.produtosBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.setConnection)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tiposBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.producoesBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvProducoes)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -241,8 +432,7 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox txtPesquisar;
-        private System.Windows.Forms.ComboBox cmbFiltro;
+        private System.Windows.Forms.TextBox txtDescricao;
         private System.Windows.Forms.Button btnExcluirProduto;
         private System.Windows.Forms.Button btnEditarProduto;
         private System.Windows.Forms.Button btnNovoProduto;
@@ -259,6 +449,25 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataValidadeDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn codTipoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn codUsuarioDataGridViewTextBoxColumn;
-        private System.Windows.Forms.Button btnBusca;
+        private System.Windows.Forms.BindingSource tiposBindingSource;
+        private SetConnectionTableAdapters.tiposTableAdapter tiposTableAdapter;
+        private SetConnectionTableAdapters.TableAdapterManager tableAdapterManager;
+        private System.Windows.Forms.ComboBox cmbTipo;
+        private System.Windows.Forms.BindingSource producoesBindingSource;
+        private SetConnectionTableAdapters.producoesTableAdapter producoesTableAdapter;
+        private System.Windows.Forms.DataGridView dgvProducoes;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn13;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn14;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.DateTimePicker dtpDiaProducao;
+        private System.Windows.Forms.Button btnLimpar;
+        private System.Windows.Forms.Button btnPesquisar;
+        private System.Windows.Forms.Button btnProducao;
+        private System.Windows.Forms.Button btnProducaoAtual;
     }
 }

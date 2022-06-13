@@ -29,9 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblItemVenda = new System.Windows.Forms.Label();
             this.dgvVendas = new System.Windows.Forms.DataGridView();
             this.codVendaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataVendaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -42,44 +40,34 @@
             this.itensVendaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.itensVendaTableAdapter = new Les_Tels.SetConnectionTableAdapters.itensVendaTableAdapter();
             this.tableAdapterManager = new Les_Tels.SetConnectionTableAdapters.TableAdapterManager();
-            this.itensVendaDataGridView = new System.Windows.Forms.DataGridView();
+            this.dgvItensVenda = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dtpInicio = new System.Windows.Forms.DateTimePicker();
+            this.btnPesquisar = new System.Windows.Forms.Button();
+            this.dtpFim = new System.Windows.Forms.DateTimePicker();
+            this.btnLimpar = new System.Windows.Forms.Button();
+            this.lblTotalVenda = new System.Windows.Forms.Label();
+            this.txtTotalVenda = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvVendas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vendasBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.setConnection)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.itensVendaBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.itensVendaDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvItensVenda)).BeginInit();
             this.SuspendLayout();
             // 
-            // textBox1
+            // lblItemVenda
             // 
-            this.textBox1.Location = new System.Drawing.Point(146, 17);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(131, 20);
-            this.textBox1.TabIndex = 5;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(19, 16);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 4;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(16, 276);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(79, 13);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "Itens da Venda";
+            this.lblItemVenda.AutoSize = true;
+            this.lblItemVenda.Location = new System.Drawing.Point(16, 276);
+            this.lblItemVenda.Name = "lblItemVenda";
+            this.lblItemVenda.Size = new System.Drawing.Size(79, 13);
+            this.lblItemVenda.TabIndex = 9;
+            this.lblItemVenda.Text = "Itens da Venda";
             // 
             // dgvVendas
             // 
@@ -163,31 +151,31 @@
             this.tableAdapterManager.usuariosTableAdapter = null;
             this.tableAdapterManager.vendasTableAdapter = null;
             // 
-            // itensVendaDataGridView
+            // dgvItensVenda
             // 
-            this.itensVendaDataGridView.AllowUserToAddRows = false;
-            this.itensVendaDataGridView.AllowUserToDeleteRows = false;
-            this.itensVendaDataGridView.AllowUserToResizeColumns = false;
-            this.itensVendaDataGridView.AllowUserToResizeRows = false;
-            this.itensVendaDataGridView.AutoGenerateColumns = false;
-            this.itensVendaDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.itensVendaDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvItensVenda.AllowUserToAddRows = false;
+            this.dgvItensVenda.AllowUserToDeleteRows = false;
+            this.dgvItensVenda.AllowUserToResizeColumns = false;
+            this.dgvItensVenda.AllowUserToResizeRows = false;
+            this.dgvItensVenda.AutoGenerateColumns = false;
+            this.dgvItensVenda.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvItensVenda.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2,
             this.dataGridViewTextBoxColumn3,
             this.dataGridViewTextBoxColumn4,
             this.dataGridViewTextBoxColumn5,
             this.dataGridViewTextBoxColumn6});
-            this.itensVendaDataGridView.DataSource = this.itensVendaBindingSource;
-            this.itensVendaDataGridView.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
-            this.itensVendaDataGridView.Location = new System.Drawing.Point(19, 292);
-            this.itensVendaDataGridView.MultiSelect = false;
-            this.itensVendaDataGridView.Name = "itensVendaDataGridView";
-            this.itensVendaDataGridView.ReadOnly = true;
-            this.itensVendaDataGridView.RowHeadersVisible = false;
-            this.itensVendaDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.itensVendaDataGridView.Size = new System.Drawing.Size(1028, 220);
-            this.itensVendaDataGridView.TabIndex = 15;
+            this.dgvItensVenda.DataSource = this.itensVendaBindingSource;
+            this.dgvItensVenda.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
+            this.dgvItensVenda.Location = new System.Drawing.Point(19, 292);
+            this.dgvItensVenda.MultiSelect = false;
+            this.dgvItensVenda.Name = "dgvItensVenda";
+            this.dgvItensVenda.ReadOnly = true;
+            this.dgvItensVenda.RowHeadersVisible = false;
+            this.dgvItensVenda.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvItensVenda.Size = new System.Drawing.Size(1028, 220);
+            this.dgvItensVenda.TabIndex = 15;
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -231,31 +219,87 @@
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
             this.dataGridViewTextBoxColumn6.ReadOnly = true;
             // 
+            // dtpInicio
+            // 
+            this.dtpInicio.CustomFormat = "";
+            this.dtpInicio.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpInicio.Location = new System.Drawing.Point(19, 20);
+            this.dtpInicio.Name = "dtpInicio";
+            this.dtpInicio.Size = new System.Drawing.Size(120, 20);
+            this.dtpInicio.TabIndex = 16;
+            // 
+            // btnPesquisar
+            // 
+            this.btnPesquisar.Location = new System.Drawing.Point(271, 17);
+            this.btnPesquisar.Name = "btnPesquisar";
+            this.btnPesquisar.Size = new System.Drawing.Size(75, 23);
+            this.btnPesquisar.TabIndex = 17;
+            this.btnPesquisar.Text = "Pesquisar";
+            this.btnPesquisar.UseVisualStyleBackColor = true;
+            this.btnPesquisar.Click += new System.EventHandler(this.btnPesquisar_Click);
+            // 
+            // dtpFim
+            // 
+            this.dtpFim.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpFim.Location = new System.Drawing.Point(145, 20);
+            this.dtpFim.Name = "dtpFim";
+            this.dtpFim.Size = new System.Drawing.Size(120, 20);
+            this.dtpFim.TabIndex = 18;
+            // 
+            // btnLimpar
+            // 
+            this.btnLimpar.Location = new System.Drawing.Point(352, 17);
+            this.btnLimpar.Name = "btnLimpar";
+            this.btnLimpar.Size = new System.Drawing.Size(75, 23);
+            this.btnLimpar.TabIndex = 19;
+            this.btnLimpar.Text = "Limpar";
+            this.btnLimpar.UseVisualStyleBackColor = true;
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
+            // 
+            // lblTotalVenda
+            // 
+            this.lblTotalVenda.AutoSize = true;
+            this.lblTotalVenda.Location = new System.Drawing.Point(349, 276);
+            this.lblTotalVenda.Name = "lblTotalVenda";
+            this.lblTotalVenda.Size = new System.Drawing.Size(65, 13);
+            this.lblTotalVenda.TabIndex = 20;
+            this.lblTotalVenda.Text = "Total Venda";
+            // 
+            // txtTotalVenda
+            // 
+            this.txtTotalVenda.Enabled = false;
+            this.txtTotalVenda.Location = new System.Drawing.Point(420, 269);
+            this.txtTotalVenda.Name = "txtTotalVenda";
+            this.txtTotalVenda.Size = new System.Drawing.Size(100, 20);
+            this.txtTotalVenda.TabIndex = 21;
+            // 
             // Vendas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.itensVendaDataGridView);
+            this.Controls.Add(this.txtTotalVenda);
+            this.Controls.Add(this.lblTotalVenda);
+            this.Controls.Add(this.btnLimpar);
+            this.Controls.Add(this.dtpFim);
+            this.Controls.Add(this.btnPesquisar);
+            this.Controls.Add(this.dtpInicio);
+            this.Controls.Add(this.dgvItensVenda);
             this.Controls.Add(this.dgvVendas);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.lblItemVenda);
             this.Name = "Vendas";
             this.Size = new System.Drawing.Size(1110, 540);
             ((System.ComponentModel.ISupportInitialize)(this.dgvVendas)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.vendasBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.setConnection)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.itensVendaBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.itensVendaDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvItensVenda)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblItemVenda;
         private System.Windows.Forms.DataGridView dgvVendas;
         private System.Windows.Forms.BindingSource vendasBindingSource;
         private SetConnection setConnection;
@@ -266,12 +310,18 @@
         private System.Windows.Forms.BindingSource itensVendaBindingSource;
         private SetConnectionTableAdapters.itensVendaTableAdapter itensVendaTableAdapter;
         private SetConnectionTableAdapters.TableAdapterManager tableAdapterManager;
-        private System.Windows.Forms.DataGridView itensVendaDataGridView;
+        private System.Windows.Forms.DataGridView dgvItensVenda;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.DateTimePicker dtpInicio;
+        private System.Windows.Forms.Button btnPesquisar;
+        private System.Windows.Forms.DateTimePicker dtpFim;
+        private System.Windows.Forms.Button btnLimpar;
+        private System.Windows.Forms.Label lblTotalVenda;
+        private System.Windows.Forms.TextBox txtTotalVenda;
     }
 }

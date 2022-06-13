@@ -17,7 +17,7 @@ namespace Les_Tels
             InitializeComponent();
             try
             {
-                this.vendasTableAdapter.Fill(this.setConnection.vendas);
+                vendasTableAdapter.Fill(this.setConnection.vendas);
             }
             catch (Exception)
             {
@@ -29,7 +29,11 @@ namespace Les_Tels
         {
             try
             {
-                this.itensVendaTableAdapter.Fill(this.setConnection.itensVenda, Convert.ToInt32(dgvVendas.Rows[dgvVendas.CurrentCell.RowIndex].Cells[0].Value.ToString()));
+                if(dgvVendas.RowCount > 0)
+                {
+                    itensVendaTableAdapter.Fill(setConnection.itensVenda, Convert.ToInt32(dgvVendas.Rows[dgvVendas.CurrentCell.RowIndex].Cells[0].Value.ToString()));
+                    txtTotalVenda.Text = itensVendaTableAdapter.ScalarQueryTotalVenda(Convert.ToInt32(dgvVendas.Rows[dgvVendas.CurrentCell.RowIndex].Cells[0].Value.ToString())).ToString();
+                }
             }
             catch (Exception)
             {
@@ -40,6 +44,28 @@ namespace Les_Tels
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnPesquisar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                vendasTableAdapter.FillByData(setConnection.vendas, dtpInicio.Value.ToString(), dtpFim.Value.ToString());
+                if (dgvVendas.RowCount < 1)
+                {
+                    itensVendaTableAdapter.Fill(setConnection.itensVenda, -1);
+                }
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
+        private void btnLimpar_Click(object sender, EventArgs e)
+        {
+            vendasTableAdapter.Fill(setConnection.vendas);
         }
     }
 }
