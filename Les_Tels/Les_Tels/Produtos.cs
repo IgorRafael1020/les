@@ -27,16 +27,8 @@ namespace Les_Tels
             }
         }
 
-        private void fillByNadaToolStripButton_Click(object sender, EventArgs e)
-        {
-            
-
-        }
-        public Produtos(string sim)
-        {
-            produtosTableAdapter.Fill(setConnection.produtos);
-        }
-            private void btnExcluirProduto_Click(object sender, EventArgs e)
+        //Produtos
+        private void btnExcluirProduto_Click(object sender, EventArgs e)
         {
             if (dgvProdutos.CurrentCell.RowIndex > 0)
                 if (MessageBox.Show("TEM CERTEZA QUE DESEJA DELETAR ESSE PRODUTO?", "PERIGO", MessageBoxButtons.YesNo) == DialogResult.Yes)
@@ -75,15 +67,30 @@ namespace Les_Tels
             produtosTableAdapter.Fill(setConnection.produtos);
         }
 
+        //Produção
+        private void btnNovaProducao_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnEditarProducao_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnExcluirProducao_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void btnProducao_Click(object sender, EventArgs e)
         {
-            producoesTableAdapter.FillByDataProducao(setConnection.producoes, dtpDiaProducao.Value);
-            MessageBox.Show(dtpDiaProducao.Value.ToString("dd-MM-yyyy"));
+            producoesTableAdapter.FillByDataProducao(setConnection.producoes, Convert.ToDateTime(dtpDiaProducao.Value.ToString("dd/MM/yyyy")));
         }
 
         private void btnProducaoAtual_Click(object sender, EventArgs e)
         {
-            producoesTableAdapter.FillByDataProducao(setConnection.producoes, DateTime.Today);
+            producoesTableAdapter.FillByDataProducao(setConnection.producoes, Convert.ToDateTime(DateTime.Today.ToString("dd/MM/yyyy")));
         }
     }
 }
