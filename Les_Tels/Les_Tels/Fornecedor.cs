@@ -15,24 +15,7 @@ namespace Les_Tels
         public Fornecedor()
         {
             InitializeComponent();
-            this.fornecedoresTableAdapter.Fill(this.setConnection.fornecedores);
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            if (dgvFornecedor.CurrentCell.RowIndex > 0)
-                if (MessageBox.Show("TEM CERTEZA QUE DESEJA DELETAR ESSE FORNECEDOR?", "PERIGO", MessageBoxButtons.YesNo) == DialogResult.Yes)
-                {
-                    try
-                    {
-                        this.fornecedoresTableAdapter.DeletarFornecedor(Convert.ToInt32(dgvFornecedor.Rows[dgvFornecedor.CurrentCell.RowIndex].Cells[0].Value.ToString()));
-                        this.fornecedoresTableAdapter.Fill(this.setConnection.fornecedores);
-                    }
-                    catch (System.Exception ex)
-                    {
-                        System.Windows.Forms.MessageBox.Show(ex.Message);
-                    }
-                }
+            this.fornecedoresTableAdapter.Fill(setConnection.fornecedores);
         }
 
         private void btnNovoFornecedor_Click(object sender, EventArgs e)
@@ -45,6 +28,23 @@ namespace Les_Tels
         {
             MiniFornecedor miniproduto = new MiniFornecedor(Convert.ToInt32(dgvFornecedor.Rows[dgvFornecedor.CurrentCell.RowIndex].Cells[0].Value.ToString()));
             miniproduto.Show();
+        }
+
+        private void btnExcluirFornecedor_Click(object sender, EventArgs e)
+        {
+            if (dgvFornecedor.CurrentCell.RowIndex > -1)
+                if (MessageBox.Show("TEM CERTEZA QUE DESEJA DELETAR ESSE FORNECEDOR?", "PERIGO", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                {
+                    try
+                    {
+                        fornecedoresTableAdapter.DeletarFornecedor(Convert.ToInt32(dgvFornecedor.Rows[dgvFornecedor.CurrentCell.RowIndex].Cells[0].Value.ToString()));
+                        fornecedoresTableAdapter.Fill(setConnection.fornecedores);
+                    }
+                    catch (System.Exception ex)
+                    {
+                        System.Windows.Forms.MessageBox.Show(ex.Message);
+                    }
+                }
         }
 
         private void fornecedoresBindingNavigatorSaveItem_Click(object sender, EventArgs e)

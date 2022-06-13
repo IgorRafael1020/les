@@ -20,28 +20,21 @@ namespace Les_Tels
         public MiniFornecedor(int codigo)
         {
             InitializeComponent();
-            this.fornecedoresTableAdapter.FillByCodFornecedor(this.setConnection.fornecedores, codigo);
+            fornecedoresTableAdapter.FillByCodFornecedor(setConnection.fornecedores, codigo);
             update = 1;
         }
 
         private void fornecedoresBindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
-            this.Validate();
-            this.fornecedoresBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.setConnection);
-
-        }
-
-        private void MiniFornecedor_Load(object sender, EventArgs e)
-        {
-            // TODO: esta linha de código carrega dados na tabela 'setConnection.fornecedores'. Você pode movê-la ou removê-la conforme necessário.
-            
+            Validate();
+            fornecedoresBindingSource.EndEdit();
+            tableAdapterManager.UpdateAll(setConnection);
 
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Close();
         }
 
         private void btnSalvar_Click(object sender, EventArgs e)
@@ -50,21 +43,21 @@ namespace Les_Tels
             {
                 try
                 {
-                    this.fornecedoresTableAdapter.UpdateFornecedor(
-                        txtNomeRazao.Text.ToString(),
-                        txtNomeFantasia.Text.ToString(),
-                        txtCnpj.Text.ToString(),
-                        txtCep.Text.ToString(),
-                        txtUf.Text.ToString(),
-                        txtCidade.Text.ToString(),
-                        txtBairro.Text.ToString(),
-                        txtEndereco.Text.ToString(),
-                                        Convert.ToDateTime("11/06/2022"),
-                                        1,
-                                        Convert.ToInt32(txtCodFornecedor.Text.ToString())
+                    fornecedoresTableAdapter.UpdateFornecedor(
+                                            txtNomeRazao.Text.ToString(),
+                                            txtNomeFantasia.Text.ToString(),
+                                            txtCnpj.Text.ToString(),
+                                            txtCep.Text.ToString(),
+                                            txtUf.Text.ToString(),
+                                            txtCidade.Text.ToString(),
+                                            txtBairro.Text.ToString(),
+                                            txtEndereco.Text.ToString(),
+                                            Convert.ToDateTime(dtpDataCadastro.Value.ToString("dd/MM/yyyy")),
+                                            1,
+                                            Convert.ToInt32(txtCodFornecedor.Text.ToString())
                                         );
                     MessageBox.Show("Alterado Com sucesso");
-                    this.Close();
+                    Close();
                 }
                 catch (System.Exception ex)
                 {
@@ -76,7 +69,7 @@ namespace Les_Tels
             {
                 try
                 {
-                    this.fornecedoresTableAdapter.InsertFornecedor(
+                    fornecedoresTableAdapter.InsertFornecedor(
                         txtNomeRazao.Text.ToString(),
                         txtNomeFantasia.Text.ToString(),
                         txtCnpj.Text.ToString(),
@@ -89,7 +82,7 @@ namespace Les_Tels
                                         1
                                         );
                     MessageBox.Show("Inserido Com sucesso");
-                    this.Close();
+                    Close();
                 }
                 catch (System.Exception ex)
                 {

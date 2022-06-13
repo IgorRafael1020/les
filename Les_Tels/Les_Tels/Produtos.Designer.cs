@@ -65,7 +65,7 @@
             this.btnLimpar = new System.Windows.Forms.Button();
             this.btnPesquisar = new System.Windows.Forms.Button();
             this.btnProducao = new System.Windows.Forms.Button();
-            this.btnProducaoAtual = new System.Windows.Forms.Button();
+            this.btnProducaoDeHoje = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProdutos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.produtosBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.setConnection)).BeginInit();
@@ -392,21 +392,21 @@
             this.btnProducao.UseVisualStyleBackColor = true;
             this.btnProducao.Click += new System.EventHandler(this.btnProducao_Click);
             // 
-            // btnProducaoAtual
+            // btnProducaoDeHoje
             // 
-            this.btnProducaoAtual.Location = new System.Drawing.Point(648, 266);
-            this.btnProducaoAtual.Name = "btnProducaoAtual";
-            this.btnProducaoAtual.Size = new System.Drawing.Size(112, 23);
-            this.btnProducaoAtual.TabIndex = 25;
-            this.btnProducaoAtual.Text = "Produção Atual";
-            this.btnProducaoAtual.UseVisualStyleBackColor = true;
-            this.btnProducaoAtual.Click += new System.EventHandler(this.btnProducaoAtual_Click);
+            this.btnProducaoDeHoje.Location = new System.Drawing.Point(648, 266);
+            this.btnProducaoDeHoje.Name = "btnProducaoDeHoje";
+            this.btnProducaoDeHoje.Size = new System.Drawing.Size(112, 23);
+            this.btnProducaoDeHoje.TabIndex = 25;
+            this.btnProducaoDeHoje.Text = "Produção de Hoje";
+            this.btnProducaoDeHoje.UseVisualStyleBackColor = true;
+            this.btnProducaoDeHoje.Click += new System.EventHandler(this.btnProducaoAtual_Click);
             // 
             // Produtos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.btnProducaoAtual);
+            this.Controls.Add(this.btnProducaoDeHoje);
             this.Controls.Add(this.btnProducao);
             this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.btnPesquisar);
@@ -472,6 +472,6 @@
         private System.Windows.Forms.Button btnLimpar;
         private System.Windows.Forms.Button btnPesquisar;
         private System.Windows.Forms.Button btnProducao;
-        private System.Windows.Forms.Button btnProducaoAtual;
+        private System.Windows.Forms.Button btnProducaoDeHoje;
     }
 }

@@ -53,7 +53,7 @@ namespace Les_Tels
             this.txtCidade = new System.Windows.Forms.TextBox();
             this.txtBairro = new System.Windows.Forms.TextBox();
             this.txtEndereco = new System.Windows.Forms.TextBox();
-            this.dgvDataCadastro = new System.Windows.Forms.DateTimePicker();
+            this.dtpDataCadastro = new System.Windows.Forms.DateTimePicker();
             this.txtCodUsuario = new System.Windows.Forms.TextBox();
             this.btnSalvar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
@@ -264,13 +264,14 @@ namespace Les_Tels
             this.txtEndereco.Size = new System.Drawing.Size(200, 20);
             this.txtEndereco.TabIndex = 18;
             // 
-            // dgvDataCadastro
+            // dtpDataCadastro
             // 
-            this.dgvDataCadastro.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.fornecedoresBindingSource, "dataCadastro", true));
-            this.dgvDataCadastro.Location = new System.Drawing.Point(160, 250);
-            this.dgvDataCadastro.Name = "dgvDataCadastro";
-            this.dgvDataCadastro.Size = new System.Drawing.Size(200, 20);
-            this.dgvDataCadastro.TabIndex = 20;
+            this.dtpDataCadastro.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.fornecedoresBindingSource, "dataCadastro", true));
+            this.dtpDataCadastro.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpDataCadastro.Location = new System.Drawing.Point(160, 250);
+            this.dtpDataCadastro.Name = "dtpDataCadastro";
+            this.dtpDataCadastro.Size = new System.Drawing.Size(200, 20);
+            this.dtpDataCadastro.TabIndex = 20;
             // 
             // txtCodUsuario
             // 
@@ -335,12 +336,11 @@ namespace Les_Tels
             this.Controls.Add(enderecoLabel);
             this.Controls.Add(this.txtEndereco);
             this.Controls.Add(dataCadastroLabel);
-            this.Controls.Add(this.dgvDataCadastro);
+            this.Controls.Add(this.dtpDataCadastro);
             this.Controls.Add(codUsuarioLabel);
             this.Controls.Add(this.txtCodUsuario);
             this.Name = "MiniFornecedor";
             this.Text = "MiniFornecedor";
-            this.Load += new System.EventHandler(this.MiniFornecedor_Load);
             ((System.ComponentModel.ISupportInitialize)(this.setConnection)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fornecedoresBindingSource)).EndInit();
             this.ResumeLayout(false);
@@ -362,7 +362,7 @@ namespace Les_Tels
         private System.Windows.Forms.TextBox txtCidade;
         private System.Windows.Forms.TextBox txtBairro;
         private System.Windows.Forms.TextBox txtEndereco;
-        private System.Windows.Forms.DateTimePicker dgvDataCadastro;
+        private System.Windows.Forms.DateTimePicker dtpDataCadastro;
         private System.Windows.Forms.TextBox txtCodUsuario;
         private System.Windows.Forms.Button btnSalvar;
         private System.Windows.Forms.Button btnCancelar;

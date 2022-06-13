@@ -26,18 +26,18 @@ namespace Les_Tels
 
         }
 
-        private void btnEditarUsuario_Click(object sender, EventArgs e)
-        {
-            MiniUsuarios miniUsuarios = new MiniUsuarios(Convert.ToInt32(dgvUsuarios.Rows[dgvUsuarios.CurrentCell.RowIndex].Cells[0].Value.ToString()));
-            miniUsuarios.Show();
-        }
-
         private void btnNovoUsuario_Click(object sender, EventArgs e)
         {
             MiniUsuarios miniUsuarios = new MiniUsuarios();
             miniUsuarios.Show();
         }
 
+        private void btnEditarUsuario_Click(object sender, EventArgs e)
+        {
+            MiniUsuarios miniUsuarios = new MiniUsuarios(Convert.ToInt32(dgvUsuarios.Rows[dgvUsuarios.CurrentCell.RowIndex].Cells[0].Value.ToString()));
+            miniUsuarios.Show();
+        }
+        
         private void btnDeletarUsuario_Click(object sender, EventArgs e)
         {
             if (dgvUsuarios.CurrentCell.RowIndex > 0)

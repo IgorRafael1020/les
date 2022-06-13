@@ -84,7 +84,7 @@
             this.btnExcluirFornecedor.TabIndex = 2;
             this.btnExcluirFornecedor.Text = "Excluir Fornecedor";
             this.btnExcluirFornecedor.UseVisualStyleBackColor = true;
-            this.btnExcluirFornecedor.Click += new System.EventHandler(this.button3_Click);
+            this.btnExcluirFornecedor.Click += new System.EventHandler(this.btnExcluirFornecedor_Click);
             // 
             // txtFornecedor
             // 

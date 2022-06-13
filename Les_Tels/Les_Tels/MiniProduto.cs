@@ -10,15 +10,15 @@ using System.Windows.Forms;
 
 namespace Les_Tels
 {
-    public partial class Novo_Produto : Form
+    public partial class MiniProduto : Form
     {
         public int update = 0;
-        public Novo_Produto()
+        public MiniProduto()
         {
             InitializeComponent();
         }
         //public void Novo_Produto_Adicionar(string descricao,double preco,string unidade, double quantidade,double estoqueminimo,DateTime validade)
-        public  Novo_Produto(int codigo)
+        public  MiniProduto(int codigo)
         {
             InitializeComponent();
             this.produtosTableAdapter.FillByCodigo(this.setConnection.produtos, codigo);
