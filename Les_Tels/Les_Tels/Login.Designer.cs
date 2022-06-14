@@ -60,6 +60,7 @@
             // lblLogin
             // 
             this.lblLogin.AutoSize = true;
+            this.lblLogin.BackColor = System.Drawing.Color.Transparent;
             this.lblLogin.Location = new System.Drawing.Point(50, 139);
             this.lblLogin.Name = "lblLogin";
             this.lblLogin.Size = new System.Drawing.Size(33, 13);
@@ -69,6 +70,7 @@
             // lblSenha
             // 
             this.lblSenha.AutoSize = true;
+            this.lblSenha.BackColor = System.Drawing.Color.Transparent;
             this.lblSenha.Location = new System.Drawing.Point(50, 182);
             this.lblSenha.Name = "lblSenha";
             this.lblSenha.Size = new System.Drawing.Size(38, 13);
@@ -112,7 +114,7 @@
             this.rbtnLogar.FlatAppearance.BorderSize = 0;
             this.rbtnLogar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rbtnLogar.ForeColor = System.Drawing.Color.White;
-            this.rbtnLogar.Location = new System.Drawing.Point(62, 264);
+            this.rbtnLogar.Location = new System.Drawing.Point(68, 264);
             this.rbtnLogar.Name = "rbtnLogar";
             this.rbtnLogar.Size = new System.Drawing.Size(150, 40);
             this.rbtnLogar.TabIndex = 1002;
@@ -123,8 +125,8 @@
             // 
             // rbtnIcone
             // 
-            this.rbtnIcone.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.rbtnIcone.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.rbtnIcone.BackColor = System.Drawing.Color.Transparent;
+            this.rbtnIcone.BackgroundColor = System.Drawing.Color.Transparent;
             this.rbtnIcone.BackgroundImage = global::Les_Tels.Properties.Resources.Bigor_Padaria_Icon;
             this.rbtnIcone.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.rbtnIcone.BorderColor = System.Drawing.Color.Black;
@@ -133,7 +135,7 @@
             this.rbtnIcone.FlatAppearance.BorderSize = 0;
             this.rbtnIcone.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rbtnIcone.ForeColor = System.Drawing.Color.Black;
-            this.rbtnIcone.Location = new System.Drawing.Point(99, 12);
+            this.rbtnIcone.Location = new System.Drawing.Point(101, 12);
             this.rbtnIcone.Name = "rbtnIcone";
             this.rbtnIcone.Size = new System.Drawing.Size(80, 80);
             this.rbtnIcone.TabIndex = 1001;
@@ -144,7 +146,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(284, 361);
             this.Controls.Add(this.rbtnLogar);
             this.Controls.Add(this.rbtnIcone);

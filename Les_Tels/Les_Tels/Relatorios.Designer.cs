@@ -28,79 +28,86 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.btnVendas = new System.Windows.Forms.Button();
+            this.btnSolicitacoes = new System.Windows.Forms.Button();
+            this.btn = new System.Windows.Forms.Button();
+            this.btnProducoes = new System.Windows.Forms.Button();
+            this.lblRelatorios = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // button1
+            // btnVendas
             // 
-            this.button1.Location = new System.Drawing.Point(199, 43);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(218, 77);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnVendas.BackgroundImage = global::Les_Tels.Properties.Resources.Vendas_Cinza_Preto;
+            this.btnVendas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnVendas.Location = new System.Drawing.Point(199, 135);
+            this.btnVendas.Name = "btnVendas";
+            this.btnVendas.Size = new System.Drawing.Size(218, 77);
+            this.btnVendas.TabIndex = 0;
+            this.btnVendas.UseVisualStyleBackColor = true;
+            this.btnVendas.Click += new System.EventHandler(this.btnVendas_Click);
             // 
-            // button2
+            // btnSolicitacoes
             // 
-            this.button2.Location = new System.Drawing.Point(633, 43);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(218, 77);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnSolicitacoes.BackgroundImage = global::Les_Tels.Properties.Resources.Solicitações_Cinza_Preto;
+            this.btnSolicitacoes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnSolicitacoes.Location = new System.Drawing.Point(633, 135);
+            this.btnSolicitacoes.Name = "btnSolicitacoes";
+            this.btnSolicitacoes.Size = new System.Drawing.Size(218, 77);
+            this.btnSolicitacoes.TabIndex = 1;
+            this.btnSolicitacoes.UseVisualStyleBackColor = true;
+            this.btnSolicitacoes.Click += new System.EventHandler(this.btnSolicitacoes_Click);
             // 
-            // button3
+            // btn
             // 
-            this.button3.Location = new System.Drawing.Point(633, 209);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(218, 77);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btn.Location = new System.Drawing.Point(633, 301);
+            this.btn.Name = "btn";
+            this.btn.Size = new System.Drawing.Size(218, 77);
+            this.btn.TabIndex = 2;
+            this.btn.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btnProducoes
             // 
-            this.button4.Location = new System.Drawing.Point(199, 209);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(218, 77);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnProducoes.BackgroundImage = global::Les_Tels.Properties.Resources.Produtos_Cinza_Preto;
+            this.btnProducoes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnProducoes.Location = new System.Drawing.Point(199, 301);
+            this.btnProducoes.Name = "btnProducoes";
+            this.btnProducoes.Size = new System.Drawing.Size(218, 77);
+            this.btnProducoes.TabIndex = 3;
+            this.btnProducoes.UseVisualStyleBackColor = true;
+            this.btnProducoes.Click += new System.EventHandler(this.btnProducoes_Click);
             // 
-            // button5
+            // lblRelatorios
             // 
-            this.button5.Location = new System.Drawing.Point(417, 126);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(218, 77);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "button5";
-            this.button5.UseVisualStyleBackColor = true;
+            this.lblRelatorios.AutoSize = true;
+            this.lblRelatorios.Font = new System.Drawing.Font("Microsoft Sans Serif", 32F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRelatorios.Location = new System.Drawing.Point(389, 35);
+            this.lblRelatorios.Name = "lblRelatorios";
+            this.lblRelatorios.Size = new System.Drawing.Size(217, 51);
+            this.lblRelatorios.TabIndex = 4;
+            this.lblRelatorios.Text = "Relatórios";
             // 
-            // Relatórios
+            // Relatorios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Name = "Relatórios";
+            this.Controls.Add(this.lblRelatorios);
+            this.Controls.Add(this.btnProducoes);
+            this.Controls.Add(this.btn);
+            this.Controls.Add(this.btnSolicitacoes);
+            this.Controls.Add(this.btnVendas);
+            this.Name = "Relatorios";
             this.Size = new System.Drawing.Size(1110, 540);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btnVendas;
+        private System.Windows.Forms.Button btnSolicitacoes;
+        private System.Windows.Forms.Button btn;
+        private System.Windows.Forms.Button btnProducoes;
+        private System.Windows.Forms.Label lblRelatorios;
     }
 }

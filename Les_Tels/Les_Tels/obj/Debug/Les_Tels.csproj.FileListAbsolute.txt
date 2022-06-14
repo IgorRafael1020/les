@@ -92,3 +92,5 @@ C:\Users\Igor\Documents\Fatec\5º Semestre\LES\les\Les_Tels\Les_Tels\obj\Debug\L
 C:\Users\Igor\Documents\Fatec\5º Semestre\LES\les\Les_Tels\Les_Tels\obj\Debug\Les_Tels.csproj.AssemblyReference.cache
 C:\Users\Igor\Documents\Fatec\5º Semestre\LES\les\Les_Tels\Les_Tels\obj\Debug\Les_Tels.MiniProducoes.resources
 C:\Users\Igor\Documents\Fatec\5º Semestre\LES\les\Les_Tels\Les_Tels\obj\Debug\Les_Tels.MiniProduto.resources
+C:\Users\Igor\Documents\Fatec\5º Semestre\LES\les\Les_Tels\Les_Tels\obj\Debug\RdlCompile.cache
+C:\Users\Igor\Documents\Fatec\5º Semestre\LES\les\Les_Tels\Les_Tels\obj\Debug\RdlCompile.compiled

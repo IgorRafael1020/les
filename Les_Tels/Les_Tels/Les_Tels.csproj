@@ -120,11 +120,29 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RelatorioProducoes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RelatorioProducoes.Designer.cs">
+      <DependentUpon>RelatorioProducoes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Relatorios.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Relatorios.Designer.cs">
       <DependentUpon>Relatorios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RelatorioSolicitacoes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RelatorioSolicitacoes.Designer.cs">
+      <DependentUpon>RelatorioSolicitacoes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RelatorioVendas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RelatorioVendas.Designer.cs">
+      <DependentUpon>RelatorioVendas.cs</DependentUpon>
     </Compile>
     <Compile Include="RoundButton.cs">
       <SubType>Component</SubType>
@@ -195,6 +213,7 @@
     <EmbeddedResource Include="Relatorios.resx">
       <DependentUpon>Relatorios.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="rptVendas.rdlc" />
     <EmbeddedResource Include="Solicitacoes.resx">
       <DependentUpon>Solicitacoes.cs</DependentUpon>
     </EmbeddedResource>

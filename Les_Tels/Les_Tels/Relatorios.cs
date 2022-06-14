@@ -16,5 +16,23 @@ namespace Les_Tels
         {
             InitializeComponent();
         }
+
+        private void btnVendas_Click(object sender, EventArgs e)
+        {
+            RelatorioVendas relatorioVendas = new RelatorioVendas();
+            relatorioVendas.Show();
+        }
+
+        private void btnSolicitacoes_Click(object sender, EventArgs e)
+        {
+            RelatorioSolicitacoes relatorioSolicitacoes = new RelatorioSolicitacoes();
+            relatorioSolicitacoes.Show();
+        }
+
+        private void btnProducoes_Click(object sender, EventArgs e)
+        {
+            RelatorioProducoes relatorioProducoes = new RelatorioProducoes();
+            relatorioProducoes.Show();
+        }
     }
 }
