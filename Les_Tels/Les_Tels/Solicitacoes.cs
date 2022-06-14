@@ -15,6 +15,9 @@ namespace Les_Tels
         public Solicitacoes()
         {
             InitializeComponent();
+            solicitacoesTableAdapter.Fill(setConnection.solicitacoes);
+            itensSolicitacaoTableAdapter.Fill(setConnection.itensSolicitacao);
         }
+
     }
 }

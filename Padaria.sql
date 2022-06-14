@@ -59,7 +59,7 @@ create table solicitacoes(
 
 create table vendas(
     codVenda int identity(1,1) primary key,
-    dataVenda date NOT NULL,
+    dataVenda datetime NOT NULL,
 	codUsuario int
 );
 

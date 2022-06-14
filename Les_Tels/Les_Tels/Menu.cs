@@ -51,7 +51,7 @@ namespace Les_Tels
         private void btnCaixa_Click(object sender, EventArgs e)
         {
             pnlJanelas.Controls.Clear();
-            Caixa caixa = new Caixa();
+            Caixa caixa = new Caixa(codUsuario);
             pnlJanelas.Controls.Add(caixa);
             limparBotoes();
             btnCaixa.BackgroundImage = Les_Tels.Properties.Resources.Caixa_Amarelo_Preto;
