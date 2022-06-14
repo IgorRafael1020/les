@@ -12,24 +12,19 @@ namespace Les_Tels
 {
     public partial class MiniFornecedor : Form
     {
+        private int codUsuario;
         private int update;
-        public MiniFornecedor()
+        public MiniFornecedor(int codUsuario)
         {
             InitializeComponent();
+            this.codUsuario = codUsuario;
         }
-        public MiniFornecedor(int codigo)
+        public MiniFornecedor(int codUsuario, int codigo)
         {
             InitializeComponent();
             fornecedoresTableAdapter.FillByCodFornecedor(setConnection.fornecedores, codigo);
+            this.codUsuario = codUsuario;
             update = 1;
-        }
-
-        private void fornecedoresBindingNavigatorSaveItem_Click(object sender, EventArgs e)
-        {
-            Validate();
-            fornecedoresBindingSource.EndEdit();
-            tableAdapterManager.UpdateAll(setConnection);
-
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
@@ -53,7 +48,7 @@ namespace Les_Tels
                                             txtBairro.Text.ToString(),
                                             txtEndereco.Text.ToString(),
                                             Convert.ToDateTime(dtpDataCadastro.Value.ToString("dd/MM/yyyy")),
-                                            1,
+                                            codUsuario,
                                             Convert.ToInt32(txtCodFornecedor.Text.ToString())
                                         );
                     MessageBox.Show("Alterado Com sucesso");
@@ -70,16 +65,16 @@ namespace Les_Tels
                 try
                 {
                     fornecedoresTableAdapter.InsertFornecedor(
-                        txtNomeRazao.Text.ToString(),
-                        txtNomeFantasia.Text.ToString(),
-                        txtCnpj.Text.ToString(),
-                        txtCep.Text.ToString(),
-                        txtUf.Text.ToString(),
-                        txtCidade.Text.ToString(),
-                        txtBairro.Text.ToString(),
-                        txtEndereco.Text.ToString(),
-                                        Convert.ToDateTime("11/06/2022"),
-                                        1
+                                        txtNomeRazao.Text.ToString(),
+                                        txtNomeFantasia.Text.ToString(),
+                                        txtCnpj.Text.ToString(),
+                                        txtCep.Text.ToString(),
+                                        txtUf.Text.ToString(),
+                                        txtCidade.Text.ToString(),
+                                        txtBairro.Text.ToString(),
+                                        txtEndereco.Text.ToString(),
+                                        Convert.ToDateTime(dtpDataCadastro.Value.ToString("dd/MM/yyyy")),
+                                        codUsuario
                                         );
                     MessageBox.Show("Inserido Com sucesso");
                     Close();

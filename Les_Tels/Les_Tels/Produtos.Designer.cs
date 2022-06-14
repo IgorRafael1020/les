@@ -253,6 +253,7 @@
             this.cmbTipo.Size = new System.Drawing.Size(121, 21);
             this.cmbTipo.TabIndex = 15;
             this.cmbTipo.ValueMember = "codTipo";
+            this.cmbTipo.SelectedIndexChanged += new System.EventHandler(this.cmbTipo_SelectedIndexChanged);
             // 
             // producoesBindingSource
             // 

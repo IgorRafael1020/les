@@ -12,9 +12,16 @@ namespace Les_Tels
 {
     public partial class Menu : Form
     {
+        int codUsuario;
         public Menu()
         {
             InitializeComponent();
+        }
+
+        public Menu(int codUsuario)
+        {
+            InitializeComponent();
+            this.codUsuario = codUsuario;
         }
 
         private void rbtnMenu_Click(object sender, EventArgs e)
@@ -35,7 +42,7 @@ namespace Les_Tels
         private void btnProdutos_Click(object sender, EventArgs e)
         {
             pnlJanelas.Controls.Clear();
-            Produtos produtos = new Produtos();
+            Produtos produtos = new Produtos(codUsuario);
             pnlJanelas.Controls.Add(produtos);
             limparBotoes();
             btnProdutos.BackgroundImage = Les_Tels.Properties.Resources.Produtos_Amarelo_Preto;
@@ -71,7 +78,7 @@ namespace Les_Tels
         private void btnFornecedores_Click(object sender, EventArgs e)
         {
             pnlJanelas.Controls.Clear();
-            Fornecedor vendas = new Fornecedor();
+            Fornecedor vendas = new Fornecedor(codUsuario);
             pnlJanelas.Controls.Add(vendas);
             limparBotoes();
             btnFornecedores.BackgroundImage = Les_Tels.Properties.Resources.Fornecedor_Amarelo_Preto;

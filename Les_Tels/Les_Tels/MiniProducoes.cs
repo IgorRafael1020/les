@@ -14,22 +14,25 @@ namespace Les_Tels
     {
         private int update;
 
+        int codUsuario;
         public MiniProducoes()
         {
             InitializeComponent();
         }
 
-        public MiniProducoes(int codigoProduto)
+        public MiniProducoes(int codUsuario, int codigoProduto)
         {
             InitializeComponent();
             txtCodProduto.Text = codigoProduto.ToString();
+            this.codUsuario = codUsuario;
         }
 
-        public MiniProducoes(int codigoProducao, int codigoProduto)
+        public MiniProducoes(int codUsuario, int codigoProducao, int codigoProduto)
         {
             InitializeComponent();
             producoesTableAdapter.FillByCodProducao(setConnection.producoes, codigoProducao);
             update = 1;
+            this.codUsuario = codUsuario;
         }
 
         private void btnSalvar_Click(object sender, EventArgs e)
@@ -42,7 +45,7 @@ namespace Les_Tels
                                         Convert.ToInt32(txtCodProduto.Text.ToString()),
                                         Convert.ToDateTime(dtpDataProducao.Value.ToString("dd/MM/yyyy")),
                                         Convert.ToInt32(txtQuantidade.Text.ToString()),
-                                        1,
+                                        codUsuario,
                                         Convert.ToInt32(txtCodProducao.Text.ToString())
                                         );
                     MessageBox.Show("Alterado Com sucesso");
@@ -62,7 +65,7 @@ namespace Les_Tels
                                         Convert.ToInt32(txtCodProduto.Text.ToString()),
                                         Convert.ToDateTime(dtpDataProducao.Value.ToString("dd/MM/yyyy")),
                                         Convert.ToInt32(txtQuantidade.Text.ToString()),
-                                        1
+                                        codUsuario
                                         );
                     MessageBox.Show("Inserido Com sucesso");
                     Close();

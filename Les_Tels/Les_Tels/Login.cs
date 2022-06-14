@@ -17,9 +17,18 @@ namespace Les_Tels
             InitializeComponent();
         }
 
-        private void btnLogin_Click(object sender, EventArgs e)
+        private void rbtnLogan_Click(object sender, EventArgs e)
         {
-
+            if (usuariosTableAdapter.ScalarQueryExiste(txtLogin.Text, txtSenha.Text) == 1)
+            {
+                Menu menu = new Menu(Convert.ToInt32(usuariosTableAdapter.ScalarQueryObterCod(txtLogin.Text, txtSenha.Text)));
+                Hide();
+                menu.Show();
+            }
+            else
+            {
+                MessageBox.Show("Combinação de Login e Senha está incorreta");
+            }
         }
     }
 }

@@ -12,7 +12,8 @@ namespace Les_Tels
 {
     public partial class Produtos : UserControl
     {
-        public Produtos()
+        int codUsuario;
+        public Produtos(int codUsuario)
         {
             InitializeComponent();
             try
@@ -25,6 +26,7 @@ namespace Les_Tels
             {
                 System.Windows.Forms.MessageBox.Show(ex.Message);
             }
+            this.codUsuario = codUsuario;
         }
 
         //Produtos
@@ -47,13 +49,13 @@ namespace Les_Tels
 
         private void btnNovoProduto_Click(object sender, EventArgs e)
         {
-            MiniProduto miniproduto = new MiniProduto();
+            MiniProduto miniproduto = new MiniProduto(codUsuario);
             miniproduto.Show();
         }
 
         private void btnEditarProduto_Click(object sender, EventArgs e)
         {
-            MiniProduto miniproduto = new MiniProduto(Convert.ToInt32(dgvProdutos.Rows[dgvProdutos.CurrentCell.RowIndex].Cells[0].Value.ToString()));
+            MiniProduto miniproduto = new MiniProduto(codUsuario, Convert.ToInt32(dgvProdutos.Rows[dgvProdutos.CurrentCell.RowIndex].Cells[0].Value.ToString()));
             miniproduto.Show();
         }
 
@@ -71,13 +73,13 @@ namespace Les_Tels
         //Produção
         private void btnNovaProducao_Click(object sender, EventArgs e)
         {
-            MiniProducoes miniProducoes = new MiniProducoes(Convert.ToInt32(dgvProdutos.Rows[dgvProdutos.CurrentCell.RowIndex].Cells[0].Value.ToString()));
+            MiniProducoes miniProducoes = new MiniProducoes(codUsuario, Convert.ToInt32(dgvProdutos.Rows[dgvProdutos.CurrentCell.RowIndex].Cells[0].Value.ToString()));
             miniProducoes.Show();
         }
 
         private void btnEditarProducao_Click(object sender, EventArgs e)
         {
-            MiniProducoes miniProducoes = new MiniProducoes(Convert.ToInt32(dgvProducoes.Rows[dgvProducoes.CurrentCell.RowIndex].Cells[0].Value.ToString()), Convert.ToInt32(dgvProdutos.Rows[dgvProdutos.CurrentCell.RowIndex].Cells[0].Value.ToString()));
+            MiniProducoes miniProducoes = new MiniProducoes(codUsuario, Convert.ToInt32(dgvProducoes.Rows[dgvProducoes.CurrentCell.RowIndex].Cells[0].Value.ToString()), Convert.ToInt32(dgvProdutos.Rows[dgvProdutos.CurrentCell.RowIndex].Cells[0].Value.ToString()));
             miniProducoes.Show();
         }
 
@@ -106,6 +108,11 @@ namespace Les_Tels
         private void btnProducaoAtual_Click(object sender, EventArgs e)
         {
             producoesTableAdapter.FillByDataProducao(setConnection.producoes, Convert.ToDateTime(DateTime.Today.ToString("dd/MM/yyyy")));
+        }
+
+        private void cmbTipo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            produtosTableAdapter.FillByCodTipo(setConnection.produtos, cmbTipo.SelectedIndex);
         }
     }
 }

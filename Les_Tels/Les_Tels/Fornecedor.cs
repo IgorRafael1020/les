@@ -12,15 +12,17 @@ namespace Les_Tels
 {
     public partial class Fornecedor : UserControl
     {
-        public Fornecedor()
+        private int codUsuario;
+        public Fornecedor(int codUsuario)
         {
             InitializeComponent();
-            this.fornecedoresTableAdapter.Fill(setConnection.fornecedores);
+            fornecedoresTableAdapter.Fill(setConnection.fornecedores);
+            this.codUsuario = codUsuario;
         }
 
         private void btnNovoFornecedor_Click(object sender, EventArgs e)
         {
-            MiniFornecedor miniproduto = new MiniFornecedor();
+            MiniFornecedor miniproduto = new MiniFornecedor(codUsuario);
             miniproduto.Show();
         }
 

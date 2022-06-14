@@ -12,37 +12,20 @@ namespace Les_Tels
 {
     public partial class MiniProduto : Form
     {
+        public int codUsuario;
         public int update = 0;
-        public MiniProduto()
+        public MiniProduto(int codUsuario)
         {
             InitializeComponent();
+            this.codUsuario = codUsuario;
         }
         //public void Novo_Produto_Adicionar(string descricao,double preco,string unidade, double quantidade,double estoqueminimo,DateTime validade)
-        public  MiniProduto(int codigo)
+        public  MiniProduto(int codUsuario, int codigo)
         {
             InitializeComponent();
-            this.produtosTableAdapter.FillByCodigo(this.setConnection.produtos, codigo);
+            produtosTableAdapter.FillByCodigo(this.setConnection.produtos, codigo);
             update = 1;
-        }
-
-        private void btnCancelar_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void producoesBindingNavigatorSaveItem_Click(object sender, EventArgs e)
-        {
-            this.Validate();
-            this.producoesBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.setConnection);
-
-        }
-
-        private void Novo_Produto_Load(object sender, EventArgs e)
-        {
-            // TODO: esta linha de código carrega dados na tabela 'setConnection.produtos'. Você pode movê-la ou removê-la conforme necessário.
-            //
-            
+            this.codUsuario = codUsuario;
         }
 
         private void btnSalvar_Click(object sender, EventArgs e)
@@ -51,16 +34,15 @@ namespace Les_Tels
             {
                 try
                 {
-                    this.produtosTableAdapter.UpdateProdutos(txtdescricao.Text.ToString(),
+                    this.produtosTableAdapter.UpdateProdutos(
+                                        txtdescricao.Text.ToString(),
                                         Convert.ToDouble(txtpreco.Text.ToString()),
                                         txtunidade.Text.ToString(),
                                         Convert.ToInt32(txtquantidade.Text.ToString()),
                                         Convert.ToInt32(txtestoqueMinimo.Text.ToString()),
-                                        null,
-                                        //Convert.ToDateTime(dtpdataValidade.Text.ToString()),
+                                        Convert.ToDateTime(dtpdataValidade.Value.ToString("dd/MM/yyyy")),
                                         Convert.ToInt32(txtcodTipo.Text.ToString()),
-                                        //Convert.ToInt32(txtcodUsuario.Text.ToString()),
-                                        1,
+                                        codUsuario,
                                         Convert.ToInt32(txtcodProduto.Text.ToString())
                                         );
                     MessageBox.Show("Alterado Com sucesso");
@@ -76,16 +58,15 @@ namespace Les_Tels
             {
                 try
                 {
-                    this.produtosTableAdapter.InsertProdutos(txtdescricao.Text.ToString(),
+                    this.produtosTableAdapter.InsertProdutos(
+                                        txtdescricao.Text.ToString(),
                                         Convert.ToDouble(txtpreco.Text.ToString()),
                                         txtunidade.Text.ToString(),
                                         Convert.ToInt32(txtquantidade.Text.ToString()),
                                         Convert.ToInt32(txtestoqueMinimo.Text.ToString()),
-                                        null,
-                                        //Convert.ToDateTime(dtpdataValidade.Text.ToString()),
+                                        Convert.ToDateTime(dtpdataValidade.Value.ToString("dd/MM/yyyy")),
                                         Convert.ToInt32(txtcodTipo.Text.ToString()),
-                                        //Convert.ToInt32(txtcodUsuario.Text.ToString()),
-                                        1
+                                        codUsuario
                                         );
                     MessageBox.Show("Inserido Com sucesso");
                     this.Close();
@@ -95,6 +76,11 @@ namespace Les_Tels
                     System.Windows.Forms.MessageBox.Show(ex.Message);
                 }
             }
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

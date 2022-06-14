@@ -12,7 +12,7 @@ namespace Les_Tels
 {
     public partial class MiniUsuarios : Form
     {
-        private int update;
+        int update;
         public MiniUsuarios()
         {
             InitializeComponent();

@@ -143,6 +143,16 @@ namespace Les_Tels.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap fundo_login {
+            get {
+                object obj = ResourceManager.GetObject("fundo login", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap mais2_Preto_Cinza {
             get {
                 object obj = ResourceManager.GetObject("mais2 Preto Cinza", resourceCulture);

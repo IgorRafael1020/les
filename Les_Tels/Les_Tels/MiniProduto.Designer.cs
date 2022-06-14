@@ -286,7 +286,6 @@ namespace Les_Tels
             this.Controls.Add(this.btnSalvar);
             this.Name = "MiniProduto";
             this.Text = "Mini Produto";
-            this.Load += new System.EventHandler(this.Novo_Produto_Load);
             ((System.ComponentModel.ISupportInitialize)(this.setConnection)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.producoesBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.produtosBindingSource)).EndInit();
